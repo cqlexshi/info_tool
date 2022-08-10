@@ -1,0 +1,55 @@
+﻿{"code":"200",
+  "custInfo":
+  {"accountId":"12760511",
+  	"address":"卫校宿舍1栋1-1",
+  	"balanceList":[
+  		{"balance":"0.0","balanceId":"1002","balanceName":"数字基本业务"},
+		  {"balance":"11.9","balanceId":"0","balanceName":"通用"},
+ 	 		{"balance":"0.00","balanceId":"1015","balanceName":"党教帐本"}
+ 	  ],
+  "custCode":"","custId":"3760511","custName":"王佑强","mobile":"13212467000","oweTotalFee":"0.00","ownCorpOrg":"226",
+  "phone":"",
+  "totleBalance":"11.9",
+  "userList":[
+  	{"caId":"9950000001229037","caModel":"HD","caType":"1","isMain":1,"prodInstId":"1246561",
+  	"productOrderList":[
+  		{ "lineOrPoint":"line",
+  			"offerId":"800500000536",
+  			"offerInstId":"29202795",
+  			"offerName":"2013党员远教旗舰版70元/月(专款)套餐(一年预存)",
+  			"productLs":[
+  				{"expireDate":"2099-12-31 23:59:59",
+  					"productId":"800600010322",
+  					"productName":"党教V2.0 0元/月产品(党教专款)",
+  					"status":"0",
+  					"validDate":"2013-11-26 15:40:15"
+  				},
+  				{"expireDate":"2099-12-31 23:59:59",
+  					"productId":"800600010323",
+  					"productName":"TV+高清版30元/月(党教专款)",
+  					"status":"0",
+  					"validDate":"2013-11-26 15:40:15"
+  				},
+  				{"expireDate":"2099-12-31 23:59:59",
+  					"productId":"800600010321",
+  					"productName":"直播100高清20元/月42个频道产品(党教专款)",
+  					"status":"0",
+  					"validDate":"2013-11-26 15:40:15"
+  			  },
+          {"expireDate":"2099-12-31 23:59:59",
+  					"productId":"800600050323",
+  					"productName":"互动虚拟基本产品",
+  					"status":"0",
+  					"validDate":"2013-11-26 15:40:15"
+  				},
+  				{"expireDate":"2099-12-31 23:59:59",
+  					"productId":"800600010320",
+ 						 "productName":"数字基本普通20元/月产品(党教专款)",
+  					 "status":"0",
+  					 "validDate":"2013-11-26 15:40:15"
+  				}
+  		]
+  }
+],
+  "status":1}]},
+  "msg":"成功"}

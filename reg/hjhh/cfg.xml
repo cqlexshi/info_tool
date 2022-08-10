@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<dll index="run1" title="7天催还、销售数据"           time="60| | |9:01"  class="" function="" path="" done="true"></dll>
+  <dll index="run2" title="3天催还短信"                time="60| | |9:00"  class="" function="" path="" done="true"></dll>
+	<dll index="run3" title="网站正常检测、标即将过期提醒"  time="60| | |9:00"  class="" function="" path="" done="true"></dll>
+	<dll index="run4" title="实时对比网站与资金平台的资金"  time="30| | | "  class="" function="" path="" done="true"></dll>
+	<dll index="run5" title="1天催还短信"                time="60| | |9:00"  class="" function="" path="" done="true"></dll>
+	<dll index="run6" title="指定人发投资进度短信"         time="3600| | | "  class="" function="" path="" done="true"></dll>
+	<dll index="run7" title="自动发标、提现静态化"         time="10| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run8" title="监控 www.hjhh.com"         time="60| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run9" title="自动发标提现静态化"  time="1| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run10" title="任务10" time="1| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run11" title="任务11" time="1| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run12" title="任务12" time="1| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run13" title="任务13" time="1| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run14" title="任务14" time="1| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run15" title="任务15" time="1| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run16" title="yibao jizhongtouzhi" time="10| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run17" title="yibao houqulilv" time="10| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run18" title="yibao meirishouyi" time="10| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run19" title="yibao tixian" time="10| | |"  class="" function="" path="" done="true"></dll>
+  <dll index="run20" title="jidingheid" time="10| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run21" title="ziduanfenli" time="2| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run22" title="zuobiao" time="2| | |"  class="" function="" path="" done="true"></dll>
+	<dll index="run23" title="wechat" time="10| | |"  class="" function="" path=""  done="true"></dll>
+  <dll index="run24" title="news" time="3| | | "  class="" function="" path="" done="true"></dll>
+	<dll index="Monitor/Server" title="news" time="1000| | | "  class="" function="" path="" done="true"></dll>
+</root>

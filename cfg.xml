@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <dll index="Boss/F1-SaveArea" title="save area info" time="1800| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="Boss/F2-EncAreaTag" title="enc area's tag save to db" time="1800| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="Boss/run1" title="boss-step1 get user's info" time="20| | |"  class="" function="" path="" done="false"></dll>
+  <dll index="Boss/run2" title="boss-step2 save user's para" time="3| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="Boss/run3" title="boss-step3 set jmid" time="6| | |"  class="" function="" path="" done="false"></dll>
+  <dll index="Boss/run4" title="boss-step4 get tel" time="20| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="Boss/run5" title="boss-step5 save tel" time="3| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="Boss/run6" title="boss-only-995 card1" time="30| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="Boss/run62" title="boss-only-995 card2" time="30| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="Boss/run63" title="boss-only-995 card3" time="30| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="Boss/run64" title="boss-only-995 card4" time="30| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="Boss/run65" title="boss-only-995 card5" time="30| | | "  class="" function="" path="" done="false"></dll>
+  
+  <dll index="Login/login" title="news" time="30| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="Monitor/Server" title="news" time="3000| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="News" title="news" time="1800| | | "  class="" function="" path="" done="false"></dll>
+  
+  <dll index="Boss_Online/run1" title="Boss_Online" time="3000| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="Boss_Step/UserCardOrder" title="UserCardOrder" time="6| | | "  class="" function="" path="" done="false"></dll>
+  
+  <dll index="Boss_Step/Step1_Usercontact"   title="Usercontact"   time="10| | | " class="" function="" path="" done="true"></dll>
+  <dll index="Boss_Step/Step2_Usertel"       title="Usertel"       time="3| | | " class="" function="" path="" done="true"></dll>
+  <dll index="Boss_Step/Step3_UserCard"      title="UserCard"      time="3| | | " class="" function="" path="" done="true"></dll>
+  <dll index="Boss_Step/Step4_UserMoney"     title="UserMoney"     time="3| | | " class="" function="" path="" done="true"></dll>
+  <dll index="Boss_Step/Step5_UserCardOrder" title="UserCardOrder" time="3| | | " class="" function="" path="" done="true"></dll>
+  <dll index="Boss_Step/Card955_get"             title="995 card"      time="30| | | "  class="" function="" path="" done="false"></dll>
+  <dll index="test" title="test" time="3000| | | "  class="" function="" path="" done="false"></dll>
+</root>

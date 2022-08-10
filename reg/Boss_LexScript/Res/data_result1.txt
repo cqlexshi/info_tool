@@ -1,0 +1,103 @@
+﻿{
+  "code":"200",
+  "custInfo":
+  {
+	  "accountId":"54527029",
+	  "address":"渝北区_北部洪湖东路11号财富印象3号E3-5",
+	  "balanceList":
+	  [
+			  {
+				  "balance":"1061.94",
+				  "balanceId":"1002",
+				  "balanceName":"数字基本业务"
+			  }
+			  ,
+			  {
+				  "balance":"6.53",
+				  "balanceId":"0",
+				  "balanceName":"通用"
+			  }
+			  ,
+			  {
+				  "balance":"0.0",
+				  "balanceId":"1005",
+				  "balanceName":"互动基本业务"
+			  }
+		]
+	  ,
+	  "custCode":"",
+	  "custId":"7833844",
+	  "custName":"王文娜",
+	  "mobile":"13908352278",
+	  "oweTotalFee":"0.00",
+	  "ownCorpOrg":"278",
+	  "phone":"61865608",
+	  "totleBalance":"1068.47",
+	  "userList":
+	  [
+	  	{
+			  "caId":"9950000002241376",
+			  "caModel":"HD",
+			  "caType":"1",
+			  "isMain":1,
+			  "prodInstId":"17558487",
+			  "productOrderList":
+			  [
+				  {
+					  "lineOrPoint":"line",
+					  "offerId":"800520150499",
+					  "offerInstId":"54989816",
+					  "offerName":"来点体验尊荣套餐",
+					  "productLs":
+					  [
+						  {
+							  "expireDate":"2099-12-31 00:00:00",
+							  "productId":"800600000919",
+							  "productName":"2014直播78产品",
+							  "status":"0",
+							  "validDate":"2016-10-14 14:28:37"
+							}
+						  ,
+						  {
+							  "expireDate":"2099-12-31 00:00:00",
+							  "productId":"800620150012",
+							  "productName":"付费节目包",
+							  "status":"0",
+							  "validDate":"2016-10-14 14:28:37"
+						  }
+						  ,
+						  {
+							  "expireDate":"2099-12-31 00:00:00",
+							  "productId":"800622000649",
+							  "productName":"2015数字宽带10M(CM)产品",
+							  "status":"0",
+							  "validDate":"2016-10-14 14:28:37"
+						  }
+						  ,
+						  {
+							  "expireDate":"2099-12-31 00:00:00",
+							  "productId":"800600000831",
+							  "productName":"2014TV+HD版产品",
+							  "status":"0",
+							  "validDate":"2016-10-14 14:28:37"
+						  }
+						  ,
+						  {
+							  "expireDate":"2099-12-31 00:00:00",
+							  "productId":"800622000768",
+							  "productName":"来点体验尊荣套餐1200\/年计费产品",
+							  "status":"0",
+							  "validDate":"2016-10-14 14:28:37"
+						  }
+						]
+	  		}
+	  	]
+	  ,
+	  "status":1
+	  }
+	  ]
+  }
+  ,
+  "msg":"成功"
+}
+  

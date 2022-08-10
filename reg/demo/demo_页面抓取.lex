@@ -1,0 +1,15 @@
+﻿{cul}http://www.wdzx.com{||}utf-8
+{@}
+id="portal_block_2_content"{?}</div></div>
+{>}
+{ral}[$]0,0[$]
+{@}
+{saf}data1.txt
+{@}
+<a{?}/a>
+{>}
+{mgw}<a{1}/a> 
+{>}
+{ral}[$]2,0[$]
+{@}
+{saf}data3.txt

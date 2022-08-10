@@ -1,0 +1,18 @@
+﻿获取用户卡号
+请求url
+http://boss.cqccn.com:18081/boss_web/dbtreenewservlet?action=getchild&pk=1482896453305
+请求参数
+parentval=159D29A0BB29F5576F2EC26D44F8EC24%2610522312%26_1112&parentnodeid=$Tree_custTree|||0-1&parentuserobj=557_null?custAddrId%3D10522312%26custId%3D1522312%26custName%3D朱琳琳%26custStdAddrID%3D&parentlevel=1&parentchecksts=false&parenttext=用户信息&parentislastnode=true|||true&getdeep=1&parentfoldopenpic=/image/tree/fo1.gif&parentfoldclosepic=/image/tree/fc1.gif&parentleafpic=/image/tree/l1.gif&
+请求结果
+<![CDATA[<table height=0 border=0 cellspacing='0' cellpadding='0' id="$Tree_custTree|||0-1-0" I="159D29A0BB29F5576F2EC26D44F8EC24&amp;10522312&amp;_1112_2807551" U="0_/boss/so/soinfomgr/userInfoFrame.jsp?prodInsId=2807551&amp;custAddrId=10522312&amp;custId=1522312&amp;custName=朱琳琳&amp;custStdAddrID=" l="2" tID="custTree" T="主数字1-正常-卡：400501360192-机：10008806220047673" pID="$Tree_custTree|||0-1" nType="3" exp="false" isInit="false"  fOPic="/boss_web/image/tree/fo1.gif" fCPic="/boss_web/image/tree/fc1.gif" lPic="/boss_web/image/tree/duihao.png" isLN="true" ondblclick="DBTreeNew_Node_OnDBLClick(this)"  onmousedown="DBTreeNew_Node_OnMouseDown(this)"  onclick="DBTreeNew_Node_OnClick(this)" ><tr  style="height:22px;"><td style='cursor:default' NOWRAP><IMG id='' src ="/boss_web/jsv2/image/tree_pic/space_line.gif"/><IMG id="$Tree_custTree|||0-1-0_L_IMG" src ="/boss_web/jsv2/image/tree_pic/lastnode.gif"/></td><td NOWRAP><IMG id="$Tree_custTree|||0-1-0_IMG" pID="$Tree_custTree|||0-1-0" align="absmiddle" class="T-Img" style="width:16px;" disabled=true src="/boss_web/image/tree/duihao.png"/><LABEL id="$Tree_custTree|||0-1-0_LABEL" pID="$Tree_custTree|||0-1-0" class="T-Label">主数字1-正常-卡：400501360192-机：10008806220047673</LABEL></td></tr></table><div id="$Tree_custTree|||0-1-0_C_DIV" pID="$Tree_custTree|||0-1-0" style="display:none"></div>]]>
+
+
+
+http://boss.cqccn.com:8888/aicas?service=http%3A%2F%2Fboss.cqccn.com%3A8085%2Fainbs%2Fpgate%2Fquery%2FAcctQryForCrmView.jsp%3FacctId%3D10522312%26corpOrgId%3D278%26regionId%3D23
+ca卡情况，
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=qryType%3D22%26qryValue%3D10522312%26isUse%3Dfalse%26regionId%3D23%26corpOrgId%3D278&tmpPercentWidth=866&localcache=table&url_source=XMLHTTP
+ca卡详细金额
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=AcctId%3D10522312%26ServId%3D0%26RegionId%3D23%26corpOrgId%3D278&tmpPercentWidth=866&localcache=table&url_source=XMLHTTP
+
+
+

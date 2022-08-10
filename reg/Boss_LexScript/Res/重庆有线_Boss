@@ -1,0 +1,1713 @@
+-----------------------------
+http://boss.cqccn.com:18081/boss_web/webframe/shdesktopui/WebAppFrameSet.jsp
+工号：407390
+密码：Hb111111.
+--------------------
+vpn：chengbao
+密码：Cqccn1234
+以前用 https://vpn.cqccn.com/por/login_psw.csp? 登录VPN,
+现在用软件：VRC客户端
+-------------
+通过卡号查用户的订购和余额
+http://192.168.9.74/bhms/webservice/getUserInfo.action?cardType=U&card=9950000002569399
+
+三种卡号  9，8，4字头
+9950000002241376  是连续的
+8230003621789154  末尾是校验，前三位（362）可能是字值。
+400506756451
+------------------
+
+查人的信息、
+http://boss.cqccn.com:18081/boss_web/boss/so/soinfomgr/userInfoView.jsp?prodInsId=174312
+http://boss.cqccn.com:18081/boss_web/dbformrefresh?action=refresh&pk=-1&condition=prodInsId=174312&url_source=XMLHTTP
+header 包括内容：
+<FormInfo formid="detailForm" setname="com.asiainfo.boss.so.instance.base.web.SETInsProd" datamodel="com.ai.appframe2.web.datamodel.MethodModelForService" editable="false" mo="boss.so.soinfomgr.userinfoview.detailForm" operator="view" modealtype="mask" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IUserInfoQuerySV" implservice_querymethod="getBaseUserInfoForDC(String prodInsId)" conditionname="condition" cols="USER_NAME;STATE;SUB_BILL_ID;STB_ID;RES_EQU_NO2;RES_EQU_NO3;USER_PROP;USER_GROUP;BODER_FLAG;SUBSIDY_FLAG;SUBSIDY_PROP;DEGREE_FLAG;TV_NUMBER;CREATE_DATE;PROD_INST_ID;LOGIN_NAME;MAIN_PROD_INST_ID;PROD_SPEC_ID"  >
+</FormInfo>
+
+------------------------------
+登录
+http://boss.cqccn.com:8888/aicas/login?username=407390&password=SGIxMTExMTEu&service=http%3A%2F%2Fboss.cqccn.com%3A18081%2Fboss_web%2F&ai_param_ip=192.168.0.137&ai_param_hostname=DESKTOP-9ITPOCD&ai_param_mac=64%3A00%3A6A%3A20%3AD6%3AC1
+
+http%3A%2F%2Fboss.cqccn.com%3A18081%2Fboss_web%2Fboss%2Fso%2Fsoinfomgr%2FuserInfoView.jsp%3FprodInsId%3D17431
+
+---------------------------------------------------
+以 % 查询当前操作账户下所有的用户数据
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=operId%3D49EAE914365ED2D47FAFEA671042BB18%26opLoginOrganizeId%3D559E2E0B06635FF361E25C3ED4FEAF8B%26stdAddrId%3D%26doorName%3D4E6B94ABB0757F57%26oldCustCode%3D%26custCode%3D%26custName%3D%26custId%3D%26custCertTypeId%3D4894363E67A6FB0D%26custCertNo%3D%26contName%3D%26contPhone1%3D%26contMobile1%3D%26jstMobile%3D%26acctName%3D%26vipProp%3D%26userName%3D%26resEquNo1%3D%26resEquNo2%3D%26resEquNo3%3D%26resEquNo4%3D%26resEquNo5%3D%26resEquNo6%3D%26status%3D%26isHost%3D%26isTenant%3D%26ownOrgId%3D%26custTypeTemp%3D4894363E67A6FB0D%26loginName%3D&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblCustomer" setname="com.asiainfo.boss.customer.cust.web.CMCustomer" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.ICMCustomerSV" implservice_querymethod="queryCommonCust(String operId,String opLoginOrganizeId,String stdAddrId, String doorName,
+			String oldCustCode,String custCode, String custName,String custId,String custCertTypeId,String custCertNo,
+			String contName, String contPhone1,String contMobile1,String jstMobile,
+			String acctName,
+			String vipProp,String userName,
+			String resEquNo1,String resEquNo2,String resEquNo3,String resEquNo4,String resEquNo5,String resEquNo6,int $STARTROWINDEX,int $ENDROWINDEX,String status,String isHost,String isTenant,String ownOrgId,String custTypeTemp,String loginName)" implservice_countmethod="queryCommonCustCount(String operId,String opLoginOrganizeId,String stdAddrId, String doorName,
+			String oldCustCode,String custCode, String custName,String custId,String custCertTypeId,String custCertNo,
+			String contName, String contPhone1,String contMobile1,String jstMobile,
+			String acctName,
+			String vipProp,String userName,
+			String resEquNo1,String resEquNo2,String resEquNo3,String resEquNo4,String resEquNo5,String resEquNo6,
+			String status,String isHost,String isTenant,String ownOrgId,String custTypeTemp ,String loginName)" 
+multiselect="false" isquerycount="TRUE" width="740px" height="160" pagesize="50" >
+<col fieldname='CUST_ADDR_ID' visible='false' />
+<col fieldname='STD_ADDR_ID' visible='false' />
+<col fieldname='CUST_ID' visible='false' />
+<col fieldname='HOST_CUST_ID' visible='false' />
+<col fieldname='OWN_ORG_ID' visible='false' />
+<col fieldname='OWN_CORP_ORG_ID' visible='false' />
+<col fieldname='TRANSFER_STATUS' visible='false' />
+<col fieldname="STD_ADDR_NAME" width="200"  />
+<col fieldname="DOOR_NAME" width="90"  />
+<col fieldname="AUDIT_FLAG" width="90"  />
+<col fieldname="CUST_STATUS"  />
+<col fieldname="CUST_CODE"  />
+<col fieldname="CUST_NAME"  />
+<col fieldname="CUST_LEVEL"  />
+<col fieldname="CUST_TYPE"  />
+<col fieldname="CUST_CERT_TYPE"  />
+<col fieldname="CUST_CERT_NO" width="140"  />
+<col fieldname="IS_HOST" width="140"  />
+</TableInfo>
+
+
+以地址模糊查询用户。渝北区
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=operId%3D49EAE914365ED2D47FAFEA671042BB18%26opLoginOrganizeId%3D559E2E0B06635FF361E25C3ED4FEAF8B%26stdAddrId%3D%26doorName%3D5CEF26B3BD4AE678%26oldCustCode%3D%26custCode%3D%26custName%3D%26custId%3D%26custCertTypeId%3D4894363E67A6FB0D%26custCertNo%3D%26contName%3D%26contPhone1%3D%26contMobile1%3D%26jstMobile%3D%26acctName%3D%26vipProp%3D%26userName%3D%26resEquNo1%3D%26resEquNo2%3D%26resEquNo3%3D%26resEquNo4%3D%26resEquNo5%3D%26resEquNo6%3D%26status%3D%26isHost%3D%26isTenant%3D%26ownOrgId%3D%26custTypeTemp%3D4894363E67A6FB0D%26loginName%3D&localcache=table&url_source=XMLHTTP
+
+<TableInfo 
+tableid="tblCustomer" setname="com.asiainfo.boss.customer.cust.web.CMCustomer" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.ICMCustomerSV" implservice_querymethod="queryCommonCust(String operId,String opLoginOrganizeId,String stdAddrId, String doorName,
+			String oldCustCode,String custCode, String custName,String custId,String custCertTypeId,String custCertNo,
+			String contName, String contPhone1,String contMobile1,String jstMobile,
+			String acctName,
+			String vipProp,String userName,
+			String resEquNo1,String resEquNo2,String resEquNo3,String resEquNo4,String resEquNo5,String resEquNo6,int $STARTROWINDEX,int $ENDROWINDEX,String status,String isHost,String isTenant,String ownOrgId,String custTypeTemp,String loginName)" implservice_countmethod="queryCommonCustCount(String operId,String opLoginOrganizeId,String stdAddrId, String doorName,
+			String oldCustCode,String custCode, String custName,String custId,String custCertTypeId,String custCertNo,
+			String contName, String contPhone1,String contMobile1,String jstMobile,
+			String acctName,
+			String vipProp,String userName,
+			String resEquNo1,String resEquNo2,String resEquNo3,String resEquNo4,String resEquNo5,String resEquNo6,
+			String status,String isHost,String isTenant,String ownOrgId,String custTypeTemp ,String loginName)" 
+multiselect="false" isquerycount="TRUE" width="740px" height="160" pagesize="50" >
+<col fieldname='CUST_ADDR_ID' visible='false' />
+<col fieldname='STD_ADDR_ID' visible='false' />
+<col fieldname='CUST_ID' visible='false' />
+<col fieldname='HOST_CUST_ID' visible='false' />
+<col fieldname='OWN_ORG_ID' visible='false' />
+<col fieldname='OWN_CORP_ORG_ID' visible='false' />
+<col fieldname='TRANSFER_STATUS' visible='false' />
+<col fieldname="STD_ADDR_NAME" width="200"  />
+<col fieldname="DOOR_NAME" width="90"  />
+<col fieldname="AUDIT_FLAG" width="90"  />
+<col fieldname="CUST_STATUS"  />
+<col fieldname="CUST_CODE"  />
+<col fieldname="CUST_NAME"  />
+<col fieldname="CUST_LEVEL"  />
+<col fieldname="CUST_TYPE"  />
+<col fieldname="CUST_CERT_TYPE"  />
+<col fieldname="CUST_CERT_NO" width="140"  />
+<col fieldname="IS_HOST" width="140"  />
+</TableInfo>
+
+返回结果：
+<![CDATA[<DIV align="left" DBGridPK="tblCustomer" UIType="DBGridUI" Name = "TableRowSet_tblCustomer" id = "TableRowSet_tblCustomer" onlyQuery=false RowHeight=20 isQueryCount="true" pagesize="50"><xml id="TableRowSet_FieldTypeSet_tblCustomer"><ROOTINFO><FieldTypeSet Name="CMCustomer" Title="com.asiainfo.boss.customer.cust.bo.CMCustomer" MainField="CUST_ID" FullName="com_asiainfo_boss_customer_cust_web_CMCustomer">
+<FieldList>
+<Field> 
+<N>STD_ADDR_NAME</N>
+<ID>C39</ID>
+<T>住宅地址名称</T>
+<A>STD_ADDR_NAME</A>
+<Ed >DBEdit</Ed>
+<Da  M="255">String</Da>
+</Field>
+<Field> 
+<N>DOOR_NAME</N>
+<ID>C40</ID>
+<T>门牌地址</T>
+<A>DOOR_NAME</A>
+<Ed >DBEdit</Ed>
+<Da  M="255">String</Da>
+</Field>
+<Field> 
+<N>AUDIT_FLAG</N>
+<ID>C42</ID>
+<T>稽查标识</T>
+<A>AUDIT_FLAG</A>
+<Ed >DBListBox</Ed>
+<Da  M="2">Integer</Da>
+<ListDataSource>SysStaticData</ListDataSource>
+</Field>
+<Field> 
+<N>CUST_STATUS</N>
+<ID>C16</ID>
+<T>客户状态</T>
+<A>CUST_STATUS</A>
+<IsNull>N</IsNull>
+<Ed >DBListBox</Ed>
+<Da  M="1">Integer</Da>
+<ListDataSource>SysStaticData_1</ListDataSource>
+</Field>
+<Field> 
+<N>CUST_CODE</N>
+<ID>C11</ID>
+<T>客户证号</T>
+<A>CUST_CODE</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="14">String</Da>
+</Field>
+<Field> 
+<N>CUST_NAME</N>
+<ID>C14</ID>
+<T>客户名称</T>
+<A>CUST_NAME</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="255">String</Da>
+</Field>
+<Field> 
+<N>CUST_LEVEL</N>
+<ID>C13</ID>
+<T>客户级别</T>
+<A>CUST_LEVEL</A>
+<IsNull>N</IsNull>
+<Ed >DBListBox</Ed>
+<Da  M="1">Integer</Da>
+<ListDataSource>SysStaticData_2</ListDataSource>
+</Field>
+<Field> 
+<N>CUST_TYPE</N>
+<ID>C17</ID>
+<T>客户类型</T>
+<A>CUST_TYPE</A>
+<IsNull>N</IsNull>
+<Ed >DBListBox</Ed>
+<Da  M="1">Integer</Da>
+<ListDataSource>SysStaticData_3</ListDataSource>
+</Field>
+<Field> 
+<N>CUST_CERT_TYPE</N>
+<ID>C8</ID>
+<T>证件类型</T>
+<A>CUST_CERT_TYPE</A>
+<IsNull>N</IsNull>
+<Ed >DBListBox</Ed>
+<Da  M="2">Integer</Da>
+<ListDataSource>SysStaticData_4</ListDataSource>
+</Field>
+<Field> 
+<N>CUST_CERT_NO</N>
+<ID>C7</ID>
+<T>证件号码</T>
+<A>CUST_CERT_NO</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="40">String</Da>
+</Field>
+<Field> 
+<N>IS_HOST</N>
+<ID>C9</ID>
+<T>是否户主</T>
+<A>IS_HOST</A>
+<IsNull>N</IsNull>
+<Ed >DBListBox</Ed>
+<Da  M="2">Integer</Da>
+<ListDataSource>SysStaticData_5</ListDataSource>
+</Field>
+<Field> 
+<N>CUST_ADDR_ID</N>
+<ID>C37</ID>
+<T>客户住宅ID</T>
+<A>CUST_ADDR_ID</A>
+<IsNull>N</IsNull>
+<IsPk>Y</IsPk>
+<Ed >DBEdit</Ed>
+<Da  M="14">Long</Da>
+</Field>
+<Field> 
+<N>STD_ADDR_ID</N>
+<ID>C41</ID>
+<T>标准地址ID</T>
+<A>STD_ADDR_ID</A>
+<Ed >DBEdit</Ed>
+<Da  M="14">Long</Da>
+</Field>
+<Field> 
+<N>CUST_ID</N>
+<ID>C12</ID>
+<T>客户ID</T>
+<A>CUST_ID</A>
+<IsPk>Y</IsPk>
+<Ed >DBEdit</Ed>
+<Da  M="14">Long</Da>
+</Field>
+<Field> 
+<N>HOST_CUST_ID</N>
+<ID>C10</ID>
+<T>户主客户编号</T>
+<A>HOST_CUST_ID</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="14">String</Da>
+</Field>
+<Field> 
+<N>OWN_ORG_ID</N>
+<ID>C25</ID>
+<T>归属分公司或数据区</T>
+<A>OWN_ORG_ID</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="12">Long</Da>
+</Field>
+<Field> 
+<N>OWN_CORP_ORG_ID</N>
+<ID>C26</ID>
+<T>归属分公司</T>
+<A>OWN_CORP_ORG_ID</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="12">Long</Da>
+</Field>
+<Field> 
+<N>TRANSFER_STATUS</N>
+<ID>C38</ID>
+<T>整转状态</T>
+<A>TRANSFER_STATUS</A>
+<IsNull>N</IsNull>
+<IsPk>Y</IsPk>
+<Ed >DBEdit</Ed>
+<Da  M="14">Long</Da>
+</Field>
+</FieldList>
+<OpList>
+</OpList>
+</FieldTypeSet>
+<HEAD>
+<SELECT Name="SysStaticData" Title="" >
+<R I="0" T="否"/>
+<R I="1" T="是"/>
+</SELECT><SELECT Name="SysStaticData_1" Title="" >
+<R I="2" T="正常"/>
+<R I="5" T="离网"/>
+<R I="1" T="潜在"/>
+<R I="4" T="注销"/>
+</SELECT><SELECT Name="SysStaticData_2" Title="" >
+<R I="0" T="普通客户"/>
+<R I="1" T="协作客户"/>
+<R I="2" T="政企要客"/>
+<R I="3" T="关系客户"/>
+<R I="4" T="一级客户"/>
+<R I="5" T="二级客户"/>
+<R I="6" T="三级客户"/>
+</SELECT><SELECT Name="SysStaticData_3" Title="" >
+<R I="1" T="公众"/>
+<R I="3" T="集团"/>
+<R I="4" T="政企"/>
+<R I="7" T="重要客户"/>
+<R I="8" T="宾馆酒店"/>
+</SELECT><SELECT Name="SysStaticData_4" Title="" >
+<R I="1" T="身份证"/>
+<R I="2" T="护照"/>
+<R I="3" T="工作证"/>
+<R I="4" T="学生证"/>
+<R I="5" T="驾驶证"/>
+<R I="6" T="回乡证"/>
+<R I="7" T="军官证"/>
+<R I="8" T="户口本"/>
+<R I="9" T="其它"/>
+<R I="10" T="武警警官证"/>
+<R I="11" T="士兵证"/>
+<R I="12" T="军校学生证"/>
+<R I="13" T="残疾证"/>
+<R I="14" T="营业执照"/>
+<R I="15" T="政府执照"/>
+<R I="16" T="无证件类型"/>
+<R I="17" T="非签约虚拟证件"/>
+<R I="18" T="社保卡"/>
+<R I="19" T="企业代码证"/>
+<R I="20" T="工商登记证"/>
+<R I="21" T="图书证"/>
+<R I="22" T="组织机构代码证"/>
+<R I="23" T="税务登记证"/>
+<R I="24" T="纳税人识别号"/>
+</SELECT><SELECT Name="SysStaticData_5" Title="" >
+</SELECT>
+</HEAD>
+</ROOTINFO></xml>
+<DIV id="HeadAndTableDiv_tblCustomer" onresize="PrivateIE_Table_adjustTableSize('tblCustomer')" style="WIDTH:740px;overflow: hidden" class="G-TableOuterDiv">
+<DIV style="OVERFLOW: hidden; WIDTH: 740px" Name="HeadDiv_tblCustomer" id="HeadDiv_tblCustomer">
+
+<TABLE width="1260" class="G-TableHead" DBTreeColName=""
+	IsCustomerColResizeFunc="true" DBGridPK="tblCustomer" id="HeadTable_tblCustomer" Name="HeadTable_tblCustomer"
+	onmousemove="Private_TableDrag_mouseMove(this)" onmousedown="Private_TableDrag_mouseDown(this)"
+	ondragstart="Private_TableDrag_beginDrag(this)" ondragend = "Private_TableDrag_endDrag(this)"
+	onMouseOut="Private_TableDrag_mouseOut(this)"  onMouseOver="Private_TableDrag_mouseOver(this)"
+	ondblclick = "TableRowSet_OnTitleDbClick('tblCustomer');" >
+<THEAD class="GH-Head">
+<TR FieldIDs="CUST_ADDR_ID,STD_ADDR_ID,CUST_ID,HOST_CUST_ID,OWN_ORG_ID,OWN_CORP_ORG_ID,TRANSFER_STATUS" class="GH-TR">
+
+
+<TD title="住宅地址名称" width="200"  FieldID="STD_ADDR_NAME"　AAA="abc" TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>住宅地址名称</span></TD>
+
+
+<TD title="门牌地址" width="90"  FieldID="DOOR_NAME"　AAA="abc" TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>门牌地址</span></TD>
+
+
+<TD title="稽查标识" width="90"  FieldID="AUDIT_FLAG"　AAA="abc" TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>稽查标识</span></TD>
+
+
+<TD title="客户状态" width="100" FieldID="CUST_STATUS" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>客户状态</span></TD>
+
+
+<TD title="客户证号" width="100" FieldID="CUST_CODE" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>客户证号</span></TD>
+
+
+<TD title="客户名称" width="100" FieldID="CUST_NAME" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>客户名称</span></TD>
+
+
+<TD title="客户级别" width="100" FieldID="CUST_LEVEL" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>客户级别</span></TD>
+
+
+<TD title="客户类型" width="100" FieldID="CUST_TYPE" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>客户类型</span></TD>
+
+
+<TD title="证件类型" width="100" FieldID="CUST_CERT_TYPE" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>证件类型</span></TD>
+
+
+<TD title="证件号码" width="140"  FieldID="CUST_CERT_NO"　AAA="abc" TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>证件号码</span></TD>
+
+
+<TD title="是否户主" width="140"  FieldID="IS_HOST"　AAA="abc" TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>是否户主</span></TD>
+</TR>
+</THEAD>
+<TBODY>
+</TBODY>
+</TABLE>
+</DIV>
+
+<table oncontextmenu = "TableRowSet_DoContextMenu('tblCustomer',false)" id="NoResultDiv_tblCustomer" style="height100%;width:100%;position:absolute;TABLE-LAYOUT: fixed;display:none"><tr><td align='center' valign='middle' class='G-Table-NoData'>没有查询到相关信息</td></tr></table>
+
+<DIV class="G-ScrollBar"
+		 style="WIDTH:740px; HEIGHT:160px;LINE-HEIGHT: 140%"
+     DBGridPK="tblCustomer" id="TableDiv_tblCustomer" Name="TableDiv_tblCustomer"
+     onscroll = "TableRowSet_TableDivScroll('HeadDiv_tblCustomer')"
+     oncontextmenu = "TableRowSet_DoContextMenu('tblCustomer',true)">
+<TABLE  currPage="1"  pageCount="1769" style="TABLE-LAYOUT: fixed; BORDER-COLLAPSE: collapse" width="1260" DBGridPK="tblCustomer" id="DataTable_tblCustomer"  name="DataTable_tblCustomer"
+ondblclick = "TableRowSet_OnDbClick('tblCustomer');" onfocusout  ="TableRowSet_OnFocusOut('tblCustomer');" onMouseOut="Private_TableDrag_mouseOutTab('tblCustomer');"
+ onclick = "TableRowSet_OnClick('tblCustomer');"   >
+<TBODY class="G-TableBody"><tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="11118218707" STD_ADDR_ID="108064771" CUST_ID="8261546" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD" width='200' >渝北区_北部龙华大道50号北城国际中心6栋1单元31-1</td><td class="GD-TD" width='90' /><td class="GD-TD" width='90'  I='1'>是</td><td class="GD-TD" width='100'  I='2'>正常</td><td class="GD-TD" width='100' /><td class="GD-TD" width='100' >袁红</td><td class="GD-TD" width='100'  I='0'>普通客户</td><td class="GD-TD" width='100'  I='1'>公众</td><td class="GD-TD" width='100'  I='1'>身份证</td><td class="GD-TD" width='140' >512226197308170021</td><td class="GD-TD" width='140' /></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="11116176383" STD_ADDR_ID="108996439" CUST_ID="6041005" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部黄竹路100号康庄美地8栋1单元8-7</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">李光华</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510225196105122377</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="11117546294" STD_ADDR_ID="112772646" CUST_ID="7419093" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部福泉路26号龙湖源著二期19栋15-11</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">赵国明</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">512226195901181566</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10005106" STD_ADDR_ID="106104794" CUST_ID="1005106" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部天山大道西段45号江与城景上时光1栋1单元9-5</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800363501</td><td class="GD-TD">马旭明</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510181197604091915</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10005139" STD_ADDR_ID="114737993" CUST_ID="1005139" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部天竺路18号华渝怡景苑3栋15-11</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800271408</td><td class="GD-TD">唐元明</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510213195406181274</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="11117994263" STD_ADDR_ID="111408241" CUST_ID="7914814" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部红原路138号首创鸿恩国际生活区二期29栋18-1</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">张雯娟</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">511226197911110065</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10010106" STD_ADDR_ID="108374526" CUST_ID="1010106" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部鸳鸯路75号橡树澜湾D1组团48栋1单元1-1</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800757144</td><td class="GD-TD">明朗</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">500382198512162851</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10011071" STD_ADDR_ID="112770806" CUST_ID="1011071" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部福泉路26号龙湖源著二期14栋2单元1-4</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">莫春利(T022)</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">0</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10015958" STD_ADDR_ID="106109319" CUST_ID="1015958" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部大石坝一村333号华润中央公园3栋1单元17-2</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">朱坤</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">51360119811223621X</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="11118205125" STD_ADDR_ID="115319062" CUST_ID="8236566" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部太湖中路53号招商花园城悦园3栋4-7</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">魏汉林</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">513525198202272738</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10027105" STD_ADDR_ID="106265112" CUST_ID="1027105" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部红原路138号首创鸿恩国际生活区一期3栋1单元10-2</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300101369219</td><td class="GD-TD">罗丹</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510213197205251212</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10028966" STD_ADDR_ID="106104837" CUST_ID="1028966" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部天山大道西段45号江与城景上时光1栋1单元18-3</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800899586</td><td class="GD-TD">吴江</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">0</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10031432" STD_ADDR_ID="105623857" CUST_ID="1031432" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部白桦路6号万科缇香郡一组团3单元2-1</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">胡辉耀（纪艳丽）</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510213197412302422</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10034467" STD_ADDR_ID="114451071" CUST_ID="1034467" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部金桂路10号万科悦峰三期1栋11-8</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">丁洪荣</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510202195612216256</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="11117754359" STD_ADDR_ID="114455790" CUST_ID="7650224" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部红石路288号溪岸上品2栋8-5</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">赵尚丽</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">511222196403216125</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10039106" STD_ADDR_ID="112856248" CUST_ID="1039106" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部天山大道西段43号江与城熙溪地7栋10-2</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">杨杉</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">510221195104190248</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10043591" STD_ADDR_ID="113447661" CUST_ID="1043591" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部天福路109号华宇天宫花城B组团1栋1单元1-2</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">黄煌</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">0</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10046949" STD_ADDR_ID="109419320" CUST_ID="1046949" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部新溉大道18号山顶道国宾城6栋1单元17-6</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800089138</td><td class="GD-TD">颜文艺</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">0</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10046967" STD_ADDR_ID="111573465" CUST_ID="1046967" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部新溉大道18号山顶道国宾城3栋22-1</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800729834</td><td class="GD-TD">肖华高</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">0</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="11116981581" STD_ADDR_ID="111566904" CUST_ID="6858055" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部红兴路27号东原D7区二期1栋33-7</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">李静</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">512226197410150027</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="11117701808" STD_ADDR_ID="114499317" CUST_ID="7569836" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部金州大道106号北大资源博雅一期2栋12-7</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">雪国华</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510202193504105947</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="11117877350" STD_ADDR_ID="112388527" CUST_ID="7799110" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部尚品路778号鲁能星城六街区3栋14-1</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">张宇</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">513525198005130271</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10053950" STD_ADDR_ID="112400155" CUST_ID="1053950" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部湖云街6号逸翠庄园2栋1-7</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">吴泽玉</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">51021319750407122x</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="11117953386" STD_ADDR_ID="108389579" CUST_ID="7874579" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部鸳鸯路8号融科海阔天空15栋3单元3-5</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">刘孝玉</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">1111</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10054961" STD_ADDR_ID="106203110" CUST_ID="1054961" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部人兴路301号华夏城4栋1单元4-1</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800329571</td><td class="GD-TD">李剑</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510212197808294514</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10057429" STD_ADDR_ID="110731507" CUST_ID="1057429" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部金州大道5号万科悦峰7栋11-5</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800811459</td><td class="GD-TD">周进民</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">0</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10058769" STD_ADDR_ID="114842121" CUST_ID="1058769" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部吉兴路9号协信春山台16栋3单元5-2</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800431381</td><td class="GD-TD">谭明友</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">0</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10060958" STD_ADDR_ID="106536609" CUST_ID="1060958" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部兴竹路21号鹏润蓝海B区4栋1单元11-3</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">张程</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510213197901266514</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="11117361498" STD_ADDR_ID="113452082" CUST_ID="7240921" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部尚品路778号鲁能星城六街区6栋18-7</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">谢自力</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">511525199003056939</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10061968" STD_ADDR_ID="105583920" CUST_ID="1061968" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部金开大道88号附4号棕榈泉2栋1单元9-2</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800785298</td><td class="GD-TD">张里春</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">0</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="11117569086" STD_ADDR_ID="112844495" CUST_ID="7441474" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部大石坝一村333号华润中央公园19栋2-7</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">李洪</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">613021197310034748</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="11116694155" STD_ADDR_ID="108993923" CUST_ID="6567650" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部黄竹路100号康庄美地1栋1单元4-9</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">段凤容</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510224197508127269</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="11117729916" STD_ADDR_ID="112450450" CUST_ID="7608525" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部新溉路867号龙城国际2栋15-5</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">袁晓宏</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">0000</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10076751" STD_ADDR_ID="106099040" CUST_ID="1076751" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部礼仁街11号龙湖悠山时光24栋1单元32-3</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">张媛媛</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510283198104140146</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="11117608324" STD_ADDR_ID="114092386" CUST_ID="7479793" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部金山大道203号协信星都会5栋24-4</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">陈益双</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">513521196208136353</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='1' CUST_ADDR_ID="10078129" STD_ADDR_ID="109891758" CUST_ID="1078129" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="1"><td class="GD-TD">渝北区_北部金开大道1122号中冶北麓原22栋25-2</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">秦操</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510102196601038457</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="11117974090" STD_ADDR_ID="111406859" CUST_ID="7895033" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部红原路138号首创鸿恩国际生活区二期22栋13-5</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">唐善茂</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">51222419680327391X</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10080486" STD_ADDR_ID="110731429" CUST_ID="1080486" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部金州大道5号万科悦峰6栋32-6</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800811073</td><td class="GD-TD">龙文凤</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510213196407253422</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10081253" STD_ADDR_ID="113425292" CUST_ID="1081253" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部金山大道18号华宇上院23栋32-7</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">李英俊</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">510212198109053839</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10082000" STD_ADDR_ID="109491760" CUST_ID="1082000" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部兴盛支路2号梧桐郡一期15栋1单元3-2</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">吴其伟</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">123</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10086735" STD_ADDR_ID="106204568" CUST_ID="1086735" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部人兴路303号华夏城3栋1单元11-3</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD">300800789797</td><td class="GD-TD">金涛</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510202680505211</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="11117595559" STD_ADDR_ID="111567314" CUST_ID="7467485" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部红兴路27号东原D7区二期2栋17-2</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">文家春</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">512201197102052110</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10087916" STD_ADDR_ID="105491655" CUST_ID="1087916" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部龙渊街1号大众尚岭花园5栋1单元23-3</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">徐克健</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">0</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="11117852577" STD_ADDR_ID="115583992" CUST_ID="7774163" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部金山大道28号万科城三期10栋21-3</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">弓弢</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">142427198903275111</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10090260" STD_ADDR_ID="106067671" CUST_ID="1090260" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部石马河金科十年城四期52栋1单元33-2</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">牟江洪</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">510321197305240030</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10094912" STD_ADDR_ID="106165923" CUST_ID="1094912" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部金山大道1号恒大华府60栋1单元2-2</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">王一超</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='9'>其它</td><td class="GD-TD">0</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="11117740380" STD_ADDR_ID="111406222" CUST_ID="7623267" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部红原路138号首创鸿恩国际生活区二期11栋4-6</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">何敏</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">512301196501011368</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="10097404" STD_ADDR_ID="106207336" CUST_ID="1097404" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部金渝大道81号复地上城五期66栋1单元6-3</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">韩军</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510212197102034112</td><td class="GD-TD"/></tr>
+<tr class="GD-Two" height='20' I='0' CUST_ADDR_ID="10100212" STD_ADDR_ID="106325262" CUST_ID="1100212" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部大石坝东原D72栋1单元18-7</td><td class="GD-TD"/><td class="GD-TD" I='0'>否</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">邵秋</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510213193903283416</td><td class="GD-TD"/></tr>
+<tr class="GD-One" height='20' I='0' CUST_ADDR_ID="11116918882" STD_ADDR_ID="106325114" CUST_ID="6793987" HOST_CUST_ID="" OWN_ORG_ID="278" OWN_CORP_ORG_ID="278" TRANSFER_STATUS="0"><td class="GD-TD">渝北区_北部大石坝东原D72栋1单元7-13</td><td class="GD-TD"/><td class="GD-TD" I='1'>是</td><td class="GD-TD" I='2'>正常</td><td class="GD-TD"/><td class="GD-TD">赵常云</td><td class="GD-TD" I='0'>普通客户</td><td class="GD-TD" I='1'>公众</td><td class="GD-TD" I='1'>身份证</td><td class="GD-TD">510211195201101215</td><td class="GD-TD"/></tr>
+</tbody></table><TABLE border=0 width='1260' id='ScrollControlbar_tblCustomer' cellspacing='0' cellpadding='0'><tr height=1><td></td></tr></table></DIV></DIV><DIV  id="FootDiv_tblCustomer" Name="FootDiv_tblCustomer"  style="display:block; WIDTH: 740px;">
+	<TABLE id = "FootTable_tblCustomer" name = "FootTable_tblCustomer"  totalRowCount="88421"
+              class="G-TableFoot" width=740px>
+	<TBODY>
+		<TR>
+			<TD align=right>
+						<label id = "FootTable_tblCustomer_RowCount">共 1769 页 88421 条</label>
+					    		       				<LABEL>第 </LABEL><INPUT class="table-page" id="TableRowSet_tblCustomer_goToPage" name="TableRowSet_tblCustomer_goToPage" value=1><label> 页</label>&nbsp;<a href="#nogo" title="直接定位页" id="page-go" onclick="TableRowSet_turnPage('tblCustomer','goto')"></a>&nbsp;&nbsp;
+				<a href="#nogo" title="第一页" id="page-first" class="page-first" onclick="TableRowSet_turnPage('tblCustomer','first')"></a>&nbsp;
+				<a href="#nogo" title="前一页" id="page-prev"   onclick="TableRowSet_turnPage('tblCustomer','previous')"></a>&nbsp;
+				<a href="#nogo" title="下一页" id="page-next"  onclick="TableRowSet_turnPage('tblCustomer','next')"></a>&nbsp;
+				<a href="#nogo" title="最后一页" id="page-last" onclick="TableRowSet_turnPage('tblCustomer','last')"></a>&nbsp;
+                               
+                                    
+			</TD>
+		</TR>
+	</TBODY>
+	</TABLE>
+</DIV>
+<script>
+	PrivateIE_Table_adjustTableSize('tblCustomer');
+</script>
+</DIV><textarea style='display:none' id='TableTagInfo_tblCustomer' newGridPK='1462945865585' excelOutputPK='-1'></textarea>]]>
+
+
+从上面返回的xml 里得到 newGridPK='1462945865585' 有时效的限制 ，以便好查询第二页 
+下一页
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=turnpage&pk=1462945865585&newpage=2
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=turnpage&pk=1462945865585&newpage=3
+
+查询联系人
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=custId%3D84B4BF17ADF662A03E590863683C0216&tmpPercentWidth=758&localcache=table&url_source=XMLHTTP
+
+<TableInfo 
+tableid="tblContactInfo" setname="com.asiainfo.boss.customer.cust.web.SETCMCustContactInfo" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.ICMCustomerSV" implservice_querymethod="queryCustContactInfoByCustIdEnCode(String custId)" 
+multiselect="true" isquerycount="TRUE" width="100%" height="40" pagesize="2" footdisplay="false" >
+<col fieldname='CONT_ID' visible='false' />
+<col fieldname="CONT_NAME" width="150"  />
+<col fieldname="CONT_DFLT_MODE"  />
+<col fieldname="CONT_MOBILE1"  />
+<col fieldname="CONT_MOBILE2"  />
+<col fieldname="CONT_PHONE1"  />
+<col fieldname="CONT_PHONE2"  />
+</TableInfo>
+返回结果：
+<![CDATA[<DIV align="left" DBGridPK="tblContactInfo" UIType="DBGridUI" Name = "TableRowSet_tblContactInfo" id = "TableRowSet_tblContactInfo" onlyQuery=false RowHeight=20 isMutilSelect="true" isQueryCount="true" pagesize="2"><xml id="TableRowSet_FieldTypeSet_tblContactInfo"><ROOTINFO><FieldTypeSet Name="SETCMCustContactInfo" Title="com.asiainfo.boss.customer.cust.bo.CMCustContactInfo" MainField="CONT_ID" FullName="com_asiainfo_boss_customer_cust_web_SETCMCustContactInfo">
+<FieldList>
+<Field> 
+<N>CONT_NAME</N>
+<ID>C7</ID>
+<T>联系人名称</T>
+<A>CONT_NAME</A>
+<Ed >DBEdit</Ed>
+<Da  M="255">String</Da>
+</Field>
+<Field> 
+<N>CONT_DFLT_MODE</N>
+<ID>C1</ID>
+<T>默认联系方式</T>
+<A>CONT_DFLT_MODE</A>
+<Ed >DBListBox</Ed>
+<Da  M="2">Integer</Da>
+<ListDataSource>SysStaticData</ListDataSource>
+</Field>
+<Field> 
+<N>CONT_MOBILE1</N>
+<ID>C5</ID>
+<T>移动电话1</T>
+<A>CONT_MOBILE1</A>
+<Ed >DBEdit</Ed>
+<Da  M="32">String</Da>
+<DisDataType  M="11">Number</DisDataType>
+</Field>
+<Field> 
+<N>CONT_MOBILE2</N>
+<ID>C6</ID>
+<T>移动电话2</T>
+<A>CONT_MOBILE2</A>
+<Ed >DBEdit</Ed>
+<Da  M="32">String</Da>
+<DisDataType  M="11">Number</DisDataType>
+</Field>
+<Field> 
+<N>CONT_PHONE1</N>
+<ID>C8</ID>
+<T>固定电话1</T>
+<A>CONT_PHONE1</A>
+<Ed >DBEdit</Ed>
+<Da  M="32">String</Da>
+</Field>
+<Field> 
+<N>CONT_PHONE2</N>
+<ID>C9</ID>
+<T>固定电话2</T>
+<A>CONT_PHONE2</A>
+<Ed >DBEdit</Ed>
+<Da  M="32">String</Da>
+</Field>
+<Field> 
+<N>CONT_ID</N>
+<ID>C4</ID>
+<T>联系人标识</T>
+<A>CONT_ID</A>
+<IsNull>N</IsNull>
+<IsPk>Y</IsPk>
+<Ed >DBEdit</Ed>
+<Da  M="12">Long</Da>
+</Field>
+</FieldList>
+<OpList>
+</OpList>
+</FieldTypeSet>
+<HEAD>
+<SELECT Name="SysStaticData" Title="" >
+<R I="2" T="固定电话1"/>
+<R I="3" T="固定电话2"/>
+<R I="4" T="移动电话1"/>
+<R I="5" T="移动电话2"/>
+</SELECT>
+</HEAD>
+</ROOTINFO></xml>
+<DIV id="HeadAndTableDiv_tblContactInfo" onresize="PrivateIE_Table_adjustTableSize('tblContactInfo')" style="WIDTH:100%;overflow: hidden" class="G-TableOuterDiv">
+<DIV style="OVERFLOW: hidden; WIDTH: 758" Name="HeadDiv_tblContactInfo" id="HeadDiv_tblContactInfo">
+
+<TABLE width="675" class="G-TableHead" DBTreeColName=""
+	IsCustomerColResizeFunc="true" DBGridPK="tblContactInfo" id="HeadTable_tblContactInfo" Name="HeadTable_tblContactInfo"
+	onmousemove="Private_TableDrag_mouseMove(this)" onmousedown="Private_TableDrag_mouseDown(this)"
+	ondragstart="Private_TableDrag_beginDrag(this)" ondragend = "Private_TableDrag_endDrag(this)"
+	onMouseOut="Private_TableDrag_mouseOut(this)"  onMouseOver="Private_TableDrag_mouseOver(this)"
+	ondblclick = "TableRowSet_OnTitleDbClick('tblContactInfo');" >
+<THEAD class="GH-Head">
+<TR FieldIDs="CONT_ID" class="GH-TR">
+<TD align="center" width="24" class="GH-S">
+  <input  type="checkbox" class="GH-S-C"  onclick="TableRowSet_allSelectChange('tblContactInfo');" />
+</TD>
+
+
+<TD title="联系人名称" width="150"  FieldID="CONT_NAME"　AAA="abc" TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>联系人名称</span></TD>
+
+
+<TD title="默认联系方式" width="100" FieldID="CONT_DFLT_MODE" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>默认联系方式</span></TD>
+
+
+<TD title="移动电话1" width="100" FieldID="CONT_MOBILE1" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>移动电话1</span></TD>
+
+
+<TD title="移动电话2" width="100" FieldID="CONT_MOBILE2" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>移动电话2</span></TD>
+
+
+<TD title="固定电话1" width="100" FieldID="CONT_PHONE1" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>固定电话1</span></TD>
+
+
+<TD title="固定电话2" width="100" FieldID="CONT_PHONE2" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>固定电话2</span></TD>
+</TR>
+</THEAD>
+<TBODY>
+</TBODY>
+</TABLE>
+</DIV>
+
+<table oncontextmenu = "TableRowSet_DoContextMenu('tblContactInfo',false)" id="NoResultDiv_tblContactInfo" style="height100%;width:100%;position:absolute;TABLE-LAYOUT: fixed;display:none"><tr><td align='center' valign='middle' class='G-Table-NoData'>没有查询到相关信息</td></tr></table>
+
+<DIV class="G-ScrollBar"
+		 style="WIDTH:758; HEIGHT:40px;LINE-HEIGHT: 140%"
+     DBGridPK="tblContactInfo" id="TableDiv_tblContactInfo" Name="TableDiv_tblContactInfo"
+     onscroll = "TableRowSet_TableDivScroll('HeadDiv_tblContactInfo')"
+     oncontextmenu = "TableRowSet_DoContextMenu('tblContactInfo',true)">
+<TABLE  currPage="1"  pageCount="1" style="TABLE-LAYOUT: fixed; BORDER-COLLAPSE: collapse" width="675" DBGridPK="tblContactInfo" id="DataTable_tblContactInfo"  name="DataTable_tblContactInfo"
+ondblclick = "TableRowSet_OnDbClick('tblContactInfo');" onfocusout  ="TableRowSet_OnFocusOut('tblContactInfo');" onMouseOut="Private_TableDrag_mouseOutTab('tblContactInfo');"
+ onclick = "TableRowSet_OnClick('tblContactInfo');"   >
+<TBODY class="G-TableBody"><tr class="GD-Two" height='20' I='130849314' CONT_ID="130849314"> <td class="GD-S" width="25"><input AG="true" class="GD-S-C" type="checkbox"/></td><td class="GD-TD" width='150' >袁红</td><td class="GD-TD" width='100' /><td class="GD-TD" width='100' >13983539388</td><td class="GD-TD" width='100' /><td class="GD-TD" width='100' /><td class="GD-TD" width='100' /></tr>
+</tbody></table><TABLE border=0 width='675' id='ScrollControlbar_tblContactInfo' cellspacing='0' cellpadding='0'><tr height=1><td></td></tr></table></DIV></DIV><DIV  id="FootDiv_tblContactInfo" Name="FootDiv_tblContactInfo"  style="display:false; WIDTH: 758;">
+	<TABLE id = "FootTable_tblContactInfo" name = "FootTable_tblContactInfo"  totalRowCount="1"
+              class="G-TableFoot" width=100%>
+	<TBODY>
+		<TR>
+			<TD align=right>
+						<label id = "FootTable_tblContactInfo_RowCount">共 1 页 0 条</label>
+					    		       				<LABEL>第 </LABEL><INPUT class="table-page" id="TableRowSet_tblContactInfo_goToPage" name="TableRowSet_tblContactInfo_goToPage" value=1><label> 页</label>&nbsp;<a href="#nogo" title="直接定位页" id="page-go" onclick="TableRowSet_turnPage('tblContactInfo','goto')"></a>&nbsp;&nbsp;
+				<a href="#nogo" title="第一页" id="page-first" class="page-first" onclick="TableRowSet_turnPage('tblContactInfo','first')"></a>&nbsp;
+				<a href="#nogo" title="前一页" id="page-prev"   onclick="TableRowSet_turnPage('tblContactInfo','previous')"></a>&nbsp;
+				<a href="#nogo" title="下一页" id="page-next"  onclick="TableRowSet_turnPage('tblContactInfo','next')"></a>&nbsp;
+				<a href="#nogo" title="最后一页" id="page-last" onclick="TableRowSet_turnPage('tblContactInfo','last')"></a>&nbsp;
+                               
+                                    
+			</TD>
+		</TR>
+	</TBODY>
+	</TABLE>
+</DIV>
+<script>
+	PrivateIE_Table_adjustTableSize('tblContactInfo');
+</script>
+</DIV><textarea style='display:none' id='TableTagInfo_tblContactInfo' newGridPK='-1' excelOutputPK='1462949639705'><TableInfo 
+tableid="tblContactInfo" setname="com.asiainfo.boss.customer.cust.web.SETCMCustContactInfo" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.ICMCustomerSV" implservice_querymethod="queryCustContactInfoByCustIdEnCode(String custId)" 
+multiselect="true" isquerycount="TRUE" width="100%" height="40" pagesize="2" footdisplay="false" >
+<col fieldname='CONT_ID' visible='false' />
+<col fieldname="CONT_NAME" width="150"  />
+<col fieldname="CONT_DFLT_MODE"  />
+<col fieldname="CONT_MOBILE1"  />
+<col fieldname="CONT_MOBILE2"  />
+<col fieldname="CONT_PHONE1"  />
+<col fieldname="CONT_PHONE2"  />
+</TableInfo>
+</textarea>]]>
+-------------------------
+地址，分管公司
+http://boss.cqccn.com:18081/boss_web/dbformrefresh?action=refresh&pk=-1&condition=custId%3D7EFB4DE759B432D41ED4D94BE2D3AA07%26custStdAddrId%3D559058AE1E056846DBAA1152BAB7866061E25C3ED4FEAF8B&url_source=XMLHTTP
+<FormInfo formid="formCustomer" setname="com.asiainfo.boss.customer.cust.web.CMCustomer" datamodel="com.ai.appframe2.web.datamodel.MethodModelForService" editable="false" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.ICMCustomerSV" implservice_querymethod="queryCustomerInfoEnCode(String custId,String custStdAddrId)" conditionname="condition" cols="CUST_NAME;CUST_CODE;CUST_CERT_NO;OWN_ORG_ID;OLD_CUST_CODE;CUST_LEVEL;CUST_CERT_TYPE;CUST_STATUS;CUST_CERT_ADDR;OWN_CORP_ORG_ID;COMPANY_ADDR;COMPANY_NAME;CUST_TYPE;VALID_DATE;EXPIRE_DATE;CREATE_ORG_ID;CUST_NAME_SHORT;BORDER_FLAG;CUST_PROP;IS_HOST;HOST_CUST_CODE;REMARK"  >
+</FormInfo>
+-------------------------------
+
+用户信息-建档节点 属分公司或数据区
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=custId%3D7EFB4DE759B432D41ED4D94BE2D3AA07&tmpPercentWidth=0&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblCustBakInfo" setname="com.asiainfo.boss.customer.cust.web.CMCustomer" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.ICMCustomerSV" implservice_querymethod="queryCustomerByIDEnCode(String custId)" 
+multiselect="false" isquerycount="TRUE" width="100%" height="360" >
+<col fieldname="CREATE_ORG_ID"  />
+<col fieldname="ORG_ID"  />
+<col fieldname="OWN_ORG_ID"  />
+<col fieldname="OWN_CORP_ORG_ID"  />
+<col fieldname="SALE_ORG_ID"  />
+</TableInfo>
+
+------------------------------
+用户信息-标准地址名称  门牌
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=custId%3D7EFB4DE759B432D41ED4D94BE2D3AA07&tmpPercentWidth=622&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblInsAddress" setname="com.asiainfo.boss.customer.cust.web.SETInsAddress" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.ICMCustomerSV" implservice_querymethod="queryInsAddressByCustIdEnCode(String custId,int $STARTROWINDEX,int $ENDROWINDEX)" implservice_countmethod="queryInsAddressByCustIdCountEnCode(String custId)" 
+isquerycount="TRUE" width="100%" height="40" pagesize="2" >
+<col fieldname='CUST_ADDR_ID' visible='false' />
+<col fieldname='STD_ADDR_ID' visible='false' />
+<col fieldname="STD_ADDR_NAME" width="200"  />
+<col fieldname="DOOR_NAME" width="90"  />
+<col fieldname="AREA_NAME"  />
+<col fieldname="TRANSFER_STATUS"  />
+<col fieldname="RELOCATE_FLAG"  />
+<col fieldname="AUDIT_FLAG"  />
+</TableInfo>
+
+--------------------------------
+用户信息-联系人
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=custId%3D7EFB4DE759B432D41ED4D94BE2D3AA07&tmpPercentWidth=622&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblContactInfo" setname="com.asiainfo.boss.customer.cust.web.SETCMCustContactInfo" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.ICMCustomerSV" implservice_querymethod="queryCustContactInfoByCustIdEnCode(String custId)" 
+multiselect="false" isquerycount="TRUE" width="100%" height="115" pagesize="5" >
+<col fieldname='CONT_ID' visible='false' />
+<col fieldname='CUST_ID' visible='false' />
+<col fieldname="CONT_NAME"  />
+<col fieldname="CONT_DFLT_MODE"  />
+<col fieldname="CONT_MOBILE1"  />
+<col fieldname="CONT_MOBILE2"  />
+<col fieldname="CONT_PHONE1"  />
+<col fieldname="CONT_PHONE2"  />
+<col fieldname="CONT_FAX"  />
+<col fieldname="CONT_ADDR" width="150"  />
+<col fieldname="CONT_ZIPCODE"  />
+<col fieldname="CONT_EMAIL"  />
+<col fieldname="CONT_CERT_TYPE" width="150"  />
+<col fieldname="CONT_CERT_NO" width="150"  />
+</TableInfo>
+
+-------------------------------
+用户信息-客户证件
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=custId%3D7EFB4DE759B432D41ED4D94BE2D3AA07&tmpPercentWidth=622&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblHCMCustomer" setname="com.asiainfo.boss.customer.cust.web.SETHCMCustomer" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.IHCMCustomerSV" implservice_querymethod="getCustomerByCustIdEnCode(String custId)" 
+multiselect="false" isquerycount="TRUE" width="100%" height="115" pagesize="5" >
+<col fieldname='H_ID' visible='false' />
+<col fieldname='CUST_ID' visible='false' />
+<col fieldname="CUST_NAME"  />
+<col fieldname="CUST_CERT_TYPE" width="150"  />
+<col fieldname="CUST_CERT_NO" width="150"  />
+<col fieldname="DONE_DATE"  />
+<col fieldname="OP_ID"  />
+<col fieldname="ORG_ID" width="150"  />
+</TableInfo>
+
+==========================================================================================================================================================
+账户信息-获取用户名下的机顶盒数量和信息
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=qryType%3D22%26qryValue%3D10148235%26isUse%3Dfalse%26regionId%3D23%26corpOrgId%3D278&tmpPercentWidth=850&localcache=table&url_source=XMLHTTP
+
+<TableInfo 
+tableid="tblSelectPI" setname="com.asiainfo.pgate.bo.account.query.SETQProductInstance" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.query.IQueryInfoSRV" implservice_querymethod="qryProdInstByKeyNum(UserInfoInterface $USERINFO, String qryValue, String qryType, boolean isUse, String regionId, String corpOrgId)" 
+multiselect="true" width="100%" height="100" footdisplay="none" >
+<col fieldname='KEY_NUM_TYPE_CODE' visible='false' />
+<col fieldname='AREA_CODE' visible='false' />
+<col fieldname='AREA_ID' visible='false' />
+<col fieldname='EXCHANGE_ID' visible='false' />
+<col fieldname='ACCT_ID' visible='false' />
+<col fieldname='KEY_NUM' visible='false' />
+<col fieldname='ADDRESS_DESC' visible='false' />
+<col fieldname='REGION_ID' visible='false' />
+<col fieldname='CORP_ORG_ID' visible='false' />
+<col fieldname="PRODUCT_INSTANCE_ID"  />
+<col fieldname="KEY_NUM_TYPE_CODE_DESC" width="150"  />
+<col fieldname="IF_IS_MAIN"  />
+<col fieldname="ACC_NBR" width="150"  />
+<col fieldname="TOTALBLCAMOUNT"  />
+<col fieldname="TOTALBILLAMOUNT"  />
+<col fieldname="PRODUCT_INSTANCE_STATE"  />
+<col fieldname="STATE_DATE" width="200"  />
+</TableInfo>
+
+
+<![CDATA[<DIV align="left" DBGridPK="tblSelectPI" UIType="DBGridUI" Name = "TableRowSet_tblSelectPI" id = "TableRowSet_tblSelectPI" onlyQuery=false RowHeight=20 isMutilSelect="true"><xml id="TableRowSet_FieldTypeSet_tblSelectPI"><ROOTINFO><FieldTypeSet Name="SETQProductInstance" Title="com.asiainfo.pgate.bo.account.query.QBOProdInstByAcctId" MainField="PRODUCT_INSTANCE_ID" FullName="com_asiainfo_pgate_bo_account_query_SETQProductInstance">
+<FieldList>
+<Field> 
+<N>PRODUCT_INSTANCE_ID</N>
+<ID>C10</ID>
+<T>用户编号</T>
+<A>PRODUCT_INSTANCE_ID</A>
+<IsPk>Y</IsPk>
+<Ed >DBEdit</Ed>
+<Da  M="22">Long</Da>
+</Field>
+<Field> 
+<N>KEY_NUM_TYPE_CODE_DESC</N>
+<ID>C9</ID>
+<T>用户类型</T>
+<A>KEY_NUM_TYPE_CODE_DESC</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="300">String</Da>
+</Field>
+<Field> 
+<N>IF_IS_MAIN</N>
+<ID>C40</ID>
+<T>用户属性</T>
+<A>IF_IS_MAIN</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="300">String</Da>
+</Field>
+<Field> 
+<N>ACC_NBR</N>
+<ID>C34</ID>
+<T>计费号码</T>
+<A>ACC_NBR</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="300">String</Da>
+</Field>
+<Field> 
+<N>TOTALBLCAMOUNT</N>
+<ID>C38</ID>
+<T>帐本总金额</T>
+<A>TOTALBLCAMOUNT</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="300">String</Da>
+</Field>
+<Field> 
+<N>TOTALBILLAMOUNT</N>
+<ID>C39</ID>
+<T>帐单总欠费</T>
+<A>TOTALBILLAMOUNT</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="300">String</Da>
+</Field>
+<Field> 
+<N>PRODUCT_INSTANCE_STATE</N>
+<ID>C11</ID>
+<T>用户状态</T>
+<A>PRODUCT_INSTANCE_STATE</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="300">String</Da>
+</Field>
+<Field> 
+<N>STATE_DATE</N>
+<ID>C14</ID>
+<T>状态时间</T>
+<A>STATE_DATE</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da >Date</Da>
+</Field>
+<Field> 
+<N>KEY_NUM_TYPE_CODE</N>
+<ID>C8</ID>
+<T></T>
+<A>KEY_NUM_TYPE_CODE</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="50">String</Da>
+</Field>
+<Field> 
+<N>AREA_CODE</N>
+<ID>C1</ID>
+<T>区号</T>
+<A>AREA_CODE</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="40">String</Da>
+</Field>
+<Field> 
+<N>AREA_ID</N>
+<ID>C3</ID>
+<T>C4级营业区</T>
+<A>AREA_ID</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="22">Long</Da>
+</Field>
+<Field> 
+<N>EXCHANGE_ID</N>
+<ID>C20</ID>
+<T>C5级局向</T>
+<A>EXCHANGE_ID</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="22">Long</Da>
+</Field>
+<Field> 
+<N>ACCT_ID</N>
+<ID>C33</ID>
+<T>帐户编号</T>
+<A>ACCT_ID</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="300">String</Da>
+</Field>
+<Field> 
+<N>KEY_NUM</N>
+<ID>C7</ID>
+<T>计费号码</T>
+<A>KEY_NUM</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="120">String</Da>
+</Field>
+<Field> 
+<N>ADDRESS_DESC</N>
+<ID>C0</ID>
+<T>装机地址</T>
+<A>ADDRESS_DESC</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="1000">String</Da>
+</Field>
+<Field> 
+<N>REGION_ID</N>
+<ID>C4</ID>
+<T>地区标识</T>
+<A>REGION_ID</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="22">Long</Da>
+</Field>
+<Field> 
+<N>CORP_ORG_ID</N>
+<ID>C32</ID>
+<T>分公司</T>
+<A>CORP_ORG_ID</A>
+<IsNull>N</IsNull>
+<Ed >DBEdit</Ed>
+<Da  M="300">String</Da>
+</Field>
+</FieldList>
+<OpList>
+</OpList>
+</FieldTypeSet>
+<HEAD>
+
+</HEAD>
+</ROOTINFO></xml>
+<DIV id="HeadAndTableDiv_tblSelectPI" onresize="PrivateIE_Table_adjustTableSize('tblSelectPI')" style="WIDTH:100%;overflow: hidden" class="G-TableOuterDiv">
+<DIV style="OVERFLOW: hidden; WIDTH: 850" Name="HeadDiv_tblSelectPI" id="HeadDiv_tblSelectPI">
+
+<TABLE width="1025" class="G-TableHead" DBTreeColName=""
+	IsCustomerColResizeFunc="true" DBGridPK="tblSelectPI" id="HeadTable_tblSelectPI" Name="HeadTable_tblSelectPI"
+	onmousemove="Private_TableDrag_mouseMove(this)" onmousedown="Private_TableDrag_mouseDown(this)"
+	ondragstart="Private_TableDrag_beginDrag(this)" ondragend = "Private_TableDrag_endDrag(this)"
+	onMouseOut="Private_TableDrag_mouseOut(this)"  onMouseOver="Private_TableDrag_mouseOver(this)"
+	ondblclick = "TableRowSet_OnTitleDbClick('tblSelectPI');" >
+<THEAD class="GH-Head">
+<TR FieldIDs="KEY_NUM_TYPE_CODE,AREA_CODE,AREA_ID,EXCHANGE_ID,ACCT_ID,KEY_NUM,ADDRESS_DESC,REGION_ID,CORP_ORG_ID" class="GH-TR">
+<TD align="center" width="24" class="GH-S">
+  <input  type="checkbox" class="GH-S-C"  onclick="TableRowSet_allSelectChange('tblSelectPI');" />
+</TD>
+
+
+<TD title="用户编号" width="100" FieldID="PRODUCT_INSTANCE_ID" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>用户编号</span></TD>
+
+
+<TD title="用户类型" width="150"  FieldID="KEY_NUM_TYPE_CODE_DESC"　AAA="abc" TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>用户类型</span></TD>
+
+
+<TD title="用户属性" width="100" FieldID="IF_IS_MAIN" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>用户属性</span></TD>
+
+
+<TD title="计费号码" width="150"  FieldID="ACC_NBR"　AAA="abc" TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>计费号码</span></TD>
+
+
+<TD title="帐本总金额" width="100" FieldID="TOTALBLCAMOUNT" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>帐本总金额</span></TD>
+
+
+<TD title="帐单总欠费" width="100" FieldID="TOTALBILLAMOUNT" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>帐单总欠费</span></TD>
+
+
+<TD title="用户状态" width="100" FieldID="PRODUCT_INSTANCE_STATE" AAA="abc"  TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>用户状态</span></TD>
+
+
+<TD title="状态时间" width="200"  FieldID="STATE_DATE"　AAA="abc" TotalCol="false" CanModify="true" IsMask="false" class="GH-TD" align="center"><span class="GH-SORT"></span><span>状态时间</span></TD>
+</TR>
+</THEAD>
+<TBODY>
+</TBODY>
+</TABLE>
+</DIV>
+
+<table oncontextmenu = "TableRowSet_DoContextMenu('tblSelectPI',false)" id="NoResultDiv_tblSelectPI" style="height100%;width:100%;position:absolute;TABLE-LAYOUT: fixed;display:none"><tr><td align='center' valign='middle' class='G-Table-NoData'>没有查询到相关信息</td></tr></table>
+
+<DIV class="G-ScrollBar"
+		 style="WIDTH:850; HEIGHT:100px;LINE-HEIGHT: 140%"
+     DBGridPK="tblSelectPI" id="TableDiv_tblSelectPI" Name="TableDiv_tblSelectPI"
+     onscroll = "TableRowSet_TableDivScroll('HeadDiv_tblSelectPI')"
+     oncontextmenu = "TableRowSet_DoContextMenu('tblSelectPI',true)">
+<TABLE  currPage="1"  pageCount="1" style="TABLE-LAYOUT: fixed; BORDER-COLLAPSE: collapse" width="1025" DBGridPK="tblSelectPI" id="DataTable_tblSelectPI"  name="DataTable_tblSelectPI"
+ondblclick = "TableRowSet_OnDbClick('tblSelectPI');" onfocusout  ="TableRowSet_OnFocusOut('tblSelectPI');" onMouseOut="Private_TableDrag_mouseOutTab('tblSelectPI');"
+ onclick = "TableRowSet_OnClick('tblSelectPI');"   >
+<TBODY class="G-TableBody"><tr class="GD-Two" height='20' I='3124840' KEY_NUM_TYPE_CODE="1" AREA_CODE="" AREA_ID="0" EXCHANGE_ID="" ACCT_ID="" KEY_NUM="10208880000191388" ADDRESS_DESC="" REGION_ID="23" CORP_ORG_ID="278"> <td class="GD-S" width="25"><input AG="true" class="GD-S-C" type="checkbox"/></td><td class="GD-TD" width='100' >3124840</td><td class="GD-TD" width='150' >数字电视用户</td><td class="GD-TD" width='100' >主机</td><td class="GD-TD" width='150'  I='10208880000191388'>9950000000632844</td><td class="GD-TD" width='100' /><td class="GD-TD" width='100' /><td class="GD-TD" width='100' >正常使用</td><td class="GD-TD" width='200' >2006-11-17</td></tr>
+<tr class="GD-One" height='20' I='3559968' KEY_NUM_TYPE_CODE="1" AREA_CODE="" AREA_ID="0" EXCHANGE_ID="" ACCT_ID="" KEY_NUM="06018807340119038" ADDRESS_DESC="" REGION_ID="23" CORP_ORG_ID="278"> <td class="GD-S"><input AG="true" class="GD-S-C" type="checkbox"/></td><td class="GD-TD">3559968</td><td class="GD-TD">数字电视用户</td><td class="GD-TD">副机</td><td class="GD-TD" I='06018807340119038'>400504635111</td><td class="GD-TD"/><td class="GD-TD"/><td class="GD-TD">主动暂停</td><td class="GD-TD">2006-11-17</td></tr>
+<tr class="GD-Two" height='20' I='9319723' KEY_NUM_TYPE_CODE="1" AREA_CODE="" AREA_ID="0" EXCHANGE_ID="" ACCT_ID="" KEY_NUM="10208880000562018" ADDRESS_DESC="" REGION_ID="23" CORP_ORG_ID="278"> <td class="GD-S"><input AG="true" class="GD-S-C" type="checkbox"/></td><td class="GD-TD">9319723</td><td class="GD-TD">数字电视用户</td><td class="GD-TD">副机</td><td class="GD-TD" I='10208880000562018'>9950000000964263</td><td class="GD-TD"/><td class="GD-TD"/><td class="GD-TD">正常使用</td><td class="GD-TD">2013-04-01</td></tr>
+</tbody></table><TABLE border=0 width='1025' id='ScrollControlbar_tblSelectPI' cellspacing='0' cellpadding='0'><tr height=1><td></td></tr></table></DIV></DIV>
+<DIV  id="FootDiv_tblSelectPI" Name="FootDiv_tblSelectPI"  style="display:none; WIDTH: 850;">
+	<TABLE id = "FootTable_tblSelectPI" name = "FootTable_tblSelectPI"  totalRowCount="3"
+              class="G-TableFoot" width=100%>
+	<TBODY>
+		<TR>
+			<TD align=right>
+			<label>共 1 页 0 条</label>
+						<LABEL>第 </LABEL><INPUT class="table-page" id="TableRowSet_tblSelectPI_goToPage" name="TableRowSet_tblSelectPI_goToPage" value=1><label> 页</label>&nbsp;<a href="#nogo" title="直接定位页" id="page-go" onclick="TableRowSet_turnPage('tblSelectPI','goto')"></a>&nbsp;&nbsp;
+				<a href="#nogo" title="第一页" id="page-first" class="page-first" onclick="TableRowSet_turnPage('tblSelectPI','first')"></a>&nbsp;
+				<a href="#nogo" title="前一页" id="page-prev"   onclick="TableRowSet_turnPage('tblSelectPI','previous')"></a>&nbsp;
+				<a href="#nogo" title="下一页" id="page-next"  onclick="TableRowSet_turnPage('tblSelectPI','next')"></a>&nbsp;
+				<a href="#nogo" title="最后一页" id="page-last" onclick="TableRowSet_turnPage('tblSelectPI','last')"></a>&nbsp;
+			</TD>
+		</TR>
+	</TBODY>
+	</TABLE>
+</DIV>
+<script>
+	PrivateIE_Table_adjustTableSize('tblSelectPI');
+</script>
+</DIV><textarea style='display:none' id='TableTagInfo_tblSelectPI' newGridPK='-1' excelOutputPK='1462957852722'><TableInfo 
+tableid="tblSelectPI" setname="com.asiainfo.pgate.bo.account.query.SETQProductInstance" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.query.IQueryInfoSRV" implservice_querymethod="qryProdInstByKeyNum(UserInfoInterface $USERINFO, String qryValue, String qryType, boolean isUse, String regionId, String corpOrgId)" 
+multiselect="true" width="100%" height="100" footdisplay="none" >
+<col fieldname='KEY_NUM_TYPE_CODE' visible='false' />
+<col fieldname='AREA_CODE' visible='false' />
+<col fieldname='AREA_ID' visible='false' />
+<col fieldname='EXCHANGE_ID' visible='false' />
+<col fieldname='ACCT_ID' visible='false' />
+<col fieldname='KEY_NUM' visible='false' />
+<col fieldname='ADDRESS_DESC' visible='false' />
+<col fieldname='REGION_ID' visible='false' />
+<col fieldname='CORP_ORG_ID' visible='false' />
+<col fieldname="PRODUCT_INSTANCE_ID"  />
+<col fieldname="KEY_NUM_TYPE_CODE_DESC" width="150"  />
+<col fieldname="IF_IS_MAIN"  />
+<col fieldname="ACC_NBR" width="150"  />
+<col fieldname="TOTALBLCAMOUNT"  />
+<col fieldname="TOTALBILLAMOUNT"  />
+<col fieldname="PRODUCT_INSTANCE_STATE"  />
+<col fieldname="STATE_DATE" width="200"  />
+</TableInfo>
+</textarea>]]>
+
+
+=======================================================
+客户身份证
+http://boss.cqccn.com:18081/boss_web/business/com.asiainfo.boss.customer.cust.web.CustomerAction?action=queryCustByCustIdAndAddrId
+custId=7486054&custAddrId=11117614722&contId=21000965&queryTypeId=1
+
+
+
+---------------------------
+账户信息-账本信息
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=AcctId%3D10148235%26ServId%3D0%26RegionId%3D23%26corpOrgId%3D278&tmpPercentWidth=850&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblBanlance" setname="com.asiainfo.pgate.bo.account.payment.SETBillInfo" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.account.IPaymentOBDSRV" implservice_querymethod="qryBookBalanceAndServTotalBlcAndBill(String AcctId, String ServId, String RegionId, String corpOrgId)" 
+multiselect="true" width="100%" height="310" footdisplay="none" >
+<col fieldname='CORP_ORG_ID' visible='false' />
+<col fieldname='ACCT_ID' visible='false' />
+<col fieldname='SERV_ID' visible='false' />
+<col fieldname='SERVICE_TYPE' visible='false' />
+<col fieldname='SERVICE_ID' visible='false' />
+<col fieldname='SERVICE_NAME' visible='false' />
+<col fieldname='USER_TYPE' visible='false' />
+<col fieldname='ACCT_BALANCE_ID' visible='false' />
+<col fieldname='BOOK_TYPE' visible='false' />
+<col fieldname='BALANCE_TYPE_ID' visible='false' />
+<col fieldname='RESERVE_BALANCE' visible='false' />
+<col fieldname='AMOUNT' visible='false' />
+<col fieldname='SUB_BILL_ID' visible='false' />
+<col fieldname='IF_ALLOW_DRAW' visible='false' />
+<col fieldname='CONTROL_TYPE' visible='false' />
+<col fieldname='NOTSHOW' visible='false' />
+<col fieldname='SERVICEBLCAMOUNT' visible='false' />
+<col fieldname='SERVICEBILLAMOUNT' visible='false' />
+<col fieldname="SERVICE_TYPE_NAME" width="80"  />
+<col fieldname="BALANCE_TYPE_NAME" width="180"  />
+<col fieldname="ORIGINAL_BALANCE" width="85"  />
+<col fieldname="BALANCE" title="当前余额"  />
+<col fieldname="UNWOFF_BALANCE" width="80"  />
+<col fieldname="ACC_NBR" width="150"  />
+<col fieldname="IF_ALLOW_DRAW_NAME" width="125"  />
+<col fieldname="EFF_DATE"  />
+<col fieldname="EXP_DATE"  />
+</TableInfo>
+
+------------------------
+用户信息-账户信息
+http://boss.cqccn.com:18081/boss_web/dbtreenewservlet?action=getchild&pk=1462937335960
+parentval=7EFB4DE759B432D41ED4D94BE2D3AA07%2610101779%26_1111&parentnodeid=$Tree_custTree|||0-0&parentuserobj=556_null?custAddrId%3D10101779%26custId%3D1101779%26custName%3D胡克海%26custStdAddrID%3D&parentlevel=1&parentchecksts=false&parenttext=账户信息&parentislastnode=true|||false&getdeep=1&parentfoldopenpic=/image/tree/fo1.gif&parentfoldclosepic=/image/tree/fc1.gif&parentleafpic=/image/tree/l1.gif&
+
+<![CDATA[<table height=0 border=0 cellspacing='0' cellpadding='0' id="$Tree_custTree|||0-0-0" I="7EFB4DE759B432D41ED4D94BE2D3AA07&amp;10101779&amp;_1111_10101779" U="0_/boss/customer/cust/acctJumpToZG.jsp?acct_id=10101779&amp;custAddrId=10101779&amp;custId=1101779&amp;custName=胡克海&amp;custStdAddrID=" l="2" tID="custTree" T="帐户：10101779" pID="$Tree_custTree|||0-0" nType="3" exp="false" isInit="false"  fOPic="/boss_web/image/tree/fo1.gif" fCPic="/boss_web/image/tree/fc1.gif" lPic="/boss_web/image/tree/l1.gif" isLN="true" ondblclick="DBTreeNew_Node_OnDBLClick(this)"  onmousedown="DBTreeNew_Node_OnMouseDown(this)"  onclick="DBTreeNew_Node_OnClick(this)" ><tr  style="height:22px;"><td style='cursor:default' NOWRAP><IMG id='' src ="/boss_web/jsv2/image/tree_pic/vertline.gif"/><IMG id="$Tree_custTree|||0-0-0_L_IMG" src ="/boss_web/jsv2/image/tree_pic/lastnode.gif"/></td><td NOWRAP><IMG id="$Tree_custTree|||0-0-0_IMG" pID="$Tree_custTree|||0-0-0" align="absmiddle" class="T-Img" style="width:16px;" disabled=true src="/boss_web/image/tree/l1.gif"/><LABEL id="$Tree_custTree|||0-0-0_LABEL" pID="$Tree_custTree|||0-0-0" class="T-Label">帐户：10101779</LABEL></td></tr></table><div id="$Tree_custTree|||0-0-0_C_DIV" pID="$Tree_custTree|||0-0-0" style="display:none"></div>]]>
+
+-----------------------------------
+http://boss.cqccn.com:18081/boss_web/business/com.asiainfo.boss.so.web.SoFrameAction?action=clearSoSessionData&url_source=XMLHTTP
+
+---------------------------------------
+http://boss.cqccn.com:18081/boss_web/boss/so/soinfomgr/userInfoFrame.jsp?prodInsId=1020225&custAddrId=10101779&custId=1101779&custName=?????&custStdAddrID=
+
+--------------------------------------------
+http://boss.cqccn.com:18081/boss_web/boss/so/soinfomgr/UserServices.jsp?prodInsId=1020225&custId=1101779&hDoneCode=null&orderProdId=null&longProductInstId=1020225&intRowsPerPage=15
+----------------------------------------------
+用户信息-套餐信息
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=prodInstId%3D1020225&tmpPercentWidth=824&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblUserSerPkg" setname="com.asiainfo.boss.so.instance.base.web.SETInsSrvPkg" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IUserInfoQuerySV" implservice_querymethod="getUserServicePkgs(String prodInstId,int $STARTROWINDEX, int $ENDROWINDEX)" implservice_countmethod="getUserServicePkgsCount(String prodInstId)" 
+multiselect="false" isquerycount="TRUE" width="100%" pagesize="50" >
+<col fieldname='SRVPKG_INST_ID' visible='false' />
+<col fieldname='OPER_STATE' visible='false' />
+<col fieldname="OFFER_INST_ID" width="130"  />
+<col fieldname="SRVPKG_ID" width="130"  />
+<col fieldname="VALID_DATE" width="80"  />
+<col fieldname="EXPIRE_DATE" width="80"  />
+<col fieldname="STATE" width="50"  />
+<col fieldname="ORG_ID"  />
+<col fieldname="OP_ID" width="80"  />
+<col fieldname="VALID_TYPE" width="80"  />
+<col fieldname="CREATE_DATE" width="80"  />
+<col fieldname="OS_STATUS"  />
+<col fieldname="DESCRIPTION"  />
+</TableInfo>
+
+
+---------------------------------------------
+用户信息-产品信息
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=custId%3D1101779%26prodInstId%3D1020225%26curOfferInsIdList%3D67420095&tmpPercentWidth=824&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblUserSerPkg_his" setname="com.asiainfo.boss.so.instance.base.web.SETInsSrvPkg" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IUserInfoQuerySV" implservice_querymethod="getUserServicePkgsHis(long custId,String prodInstId,String curOfferInsIdList)" 
+multiselect="false" isquerycount="TRUE" width="100%" height="100" pagesize="5" >
+<col fieldname='SRVPKG_INST_ID' visible='false' />
+<col fieldname='OFFER_INST_ID' visible='false' />
+<col fieldname='REST_TIME_AMOUT' visible='false' />
+<col fieldname="SRVPKG_ID" width="130"  />
+<col fieldname="VALID_TYPE" width="80"  />
+<col fieldname="VALID_DATE" width="80"  />
+<col fieldname="EXPIRE_DATE" width="80"  />
+<col fieldname="CREATE_DATE" width="80"  />
+<col fieldname="STATE" width="50"  />
+<col fieldname="OP_ID" width="80"  />
+<col fieldname="ORG_ID"  />
+<col fieldname="DESCRIPTION"  />
+</TableInfo>
+
+
+--------------------------------------------
+用户信息-基本信息 ok
+http://boss.cqccn.com:18081/boss_web/dbformrefresh?action=refresh&pk=-1&condition=prodInsId%3D1020225&url_source=XMLHTTP
+<FormInfo formid="detailForm" setname="com.asiainfo.boss.so.instance.base.web.SETInsProd" datamodel="com.ai.appframe2.web.datamodel.MethodModelForService" editable="false" mo="boss.so.soinfomgr.userinfoview.detailForm" operator="view" modealtype="mask" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IUserInfoQuerySV" implservice_querymethod="getBaseUserInfoForDC(String prodInsId)" conditionname="condition" cols="USER_NAME;STATE;SUB_BILL_ID;STB_ID;RES_EQU_NO2;RES_EQU_NO3;USER_PROP;USER_GROUP;BODER_FLAG;SUBSIDY_FLAG;SUBSIDY_PROP;DEGREE_FLAG;TV_NUMBER;CREATE_DATE;PROD_INST_ID;LOGIN_NAME;MAIN_PROD_INST_ID;PROD_SPEC_ID"  >
+</FormInfo>
+
+1046949
+----------------------------------------------
+用户信息-已订产品 ok
+http://boss.cqccn.com:18081/boss_web/dbformrefresh?action=refresh&pk=-1&condition=prodInsId%3D1020225&url_source=XMLHTTP
+<FormInfo formid="detailForm" setname="com.asiainfo.boss.so.instance.base.web.SETInsProd" datamodel="com.ai.appframe2.web.datamodel.MethodModelForService" editable="false" mo="boss.so.soinfomgr.userinfoview.detailForm" operator="view" modealtype="mask" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IUserInfoQuerySV" implservice_querymethod="getBaseUserInfoForDC(String prodInsId)" conditionname="condition" cols="USER_NAME;STATE;SUB_BILL_ID;STB_ID;RES_EQU_NO2;RES_EQU_NO3;USER_PROP;USER_GROUP;BODER_FLAG;SUBSIDY_FLAG;SUBSIDY_PROP;DEGREE_FLAG;TV_NUMBER;CREATE_DATE;PROD_INST_ID;LOGIN_NAME;MAIN_PROD_INST_ID;PROD_SPEC_ID"  >
+</FormInfo>
+
+
+---------------------------------------------
+用户信息-已订套餐 ok
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=prodInsId%3D1020225%26qryType%3D1&tmpPercentWidth=807&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblMainOFFER1" setname="com.asiainfo.boss.so.instance.base.web.SETQInstanceOffer" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IInstanceQuerySV" implservice_querymethod="qryOfferInfo(String prodInsId,int qryType)" 
+multiselect="false" isquerycount="TRUE" width="100%" height="60" pagesize="15" >
+<col fieldname='STATE' visible='false' />
+<col fieldname='OFFER_INST_ID' visible='false' />
+<col fieldname="OFFER_ID" width="160"  />
+<col fieldname="OFFER_TYPE"  />
+<col fieldname="VALID_TYPE"  />
+<col fieldname="VALID_DATE" width="80"  />
+<col fieldname="EXPIRE_DATE" width="80"  />
+<col fieldname="ORG_ID" width="120"  />
+</TableInfo>
+
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=prodInsId%3D1020225%26qryType%3D2&tmpPercentWidth=807&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblMainOFFER2" setname="com.asiainfo.boss.so.instance.base.web.SETQInstanceOffer" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IInstanceQuerySV" implservice_querymethod="qryOfferInfo(String prodInsId,int qryType)" 
+multiselect="false" isquerycount="TRUE" width="100%" height="120" pagesize="25" >
+<col fieldname='STATE' visible='false' />
+<col fieldname='OFFER_INST_ID' visible='false' />
+<col fieldname="OFFER_ID" width="160"  />
+<col fieldname="OFFER_TYPE"  />
+<col fieldname="VALID_TYPE"  />
+<col fieldname="VALID_DATE" width="80"  />
+<col fieldname="EXPIRE_DATE" width="80"  />
+<col fieldname="ORG_ID" width="120"  />
+</TableInfo>
+
+
+
+---------------------------------------------
+用户信息-已办结订单 ok
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=prodInstId%3D1020225%26custId%3D1101779&tmpPercentWidth=807&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblUserSoInfo" setname="com.asiainfo.boss.so.order.base.web.SETQProdBussOrder" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IUserInfoQuerySV" implservice_querymethod="getUserSoInfoByProodInstId(long custId,long prodInstId,int $STARTROWINDEX, int $ENDROWINDEX)" implservice_countmethod="getUserSoInfoByProodInstIdCount(long custId,long prodInstId)" 
+multiselect="false" isquerycount="TRUE" width="100%" height="150" pagesize="50" >
+<col fieldname="CUST_ORDER_ID" width="120"  />
+<col fieldname="BUSINESS_ID" width="180"  />
+<col fieldname="OUTLINE_FLAG"  />
+<col fieldname="CREATE_DATE"  />
+<col fieldname="OP_ID" width="90"  />
+<col fieldname="ORG_ID" width="140"  />
+<col fieldname="REMARK" width="140"  />
+</TableInfo>
+
+---------------------------------------------
+用户信息-授权历史 ok
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=prodInstId%3D1020225%26custId%3D1101779&tmpPercentWidth=807&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblUserSoInfo" setname="com.asiainfo.boss.so.order.base.web.SETQProdBussOrder" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IUserInfoQuerySV" implservice_querymethod="getUserRefreshSoInfoByProodInstId(long custId,long prodInstId,int $STARTROWINDEX, int $ENDROWINDEX)" implservice_countmethod="getUserRefreshSoInfoByProodInstIdCount(long custId,long prodInstId)" 
+multiselect="false" isquerycount="TRUE" width="100%" height="150" pagesize="50" >
+<col fieldname="CUST_ORDER_ID" width="120"  />
+<col fieldname="BUSINESS_ID" width="180"  />
+<col fieldname="OUTLINE_FLAG"  />
+<col fieldname="CREATE_DATE"  />
+<col fieldname="OP_ID" width="90"  />
+<col fieldname="ORG_ID" width="140"  />
+</TableInfo>
+
+
+---------------------------------------------
+用户信息-未办结订单 ok
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=qryCond%3Dprod.prod_inst_id%3D1020225&tmpPercentWidth=807&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="orderTable" setname="com.asiainfo.boss.so.order.base.web.SETQOrderProducts" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.so.order.base.service.interfaces.IOrderQuerySV" implservice_querymethod="getOrderProductsByCond(String qryCond,int $STARTROWINDEX, int $ENDROWINDEX)" implservice_countmethod="getOrderProductsCount(String qryCond)" 
+isquerycount="TRUE" width="100%" height="125" pagesize="50" >
+<col fieldname='REGION_ID' visible='false' />
+<col fieldname="CUST_ORDER_ID" width="120" title="客户订单编号"  />
+<col fieldname="LOGIN_NAME"  />
+<col fieldname="BUSI_NAME" width="150" title="业务类型"  />
+<col fieldname="OUTLINE_FLAG" title="是否生成工单"  />
+<col fieldname="CREATETIME" title="创建日期"  />
+<col fieldname="OP_ID" width="150"  />
+<col fieldname="CUST_ORG_ID" width="150" title="受理组织"  />
+<col fieldname="REMARK" width="150" title="备注"  />
+</TableInfo>
+
+---------------------------------------------
+用户信息-资源信息 ok
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=prodInstId%3D1020225&tmpPercentWidth=832&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblUserInsRes" setname="com.asiainfo.boss.so.instance.base.web.SETInsProdRes" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IUserInfoQuerySV" implservice_querymethod="getUserInsResByProdInstId(long prodInstId)" 
+multiselect="false" isquerycount="TRUE" width="100%" height="150" pagesize="5" >
+<col fieldname='FIRM' visible='false' />
+<col fieldname='PROD_RES_INST_ID' visible='false' />
+<col fieldname='RES_EQU_NO3' visible='false' />
+<col fieldname='RES_INNET_MODE' visible='false' />
+<col fieldname="RES_TYPE" width="120"  />
+<col fieldname="RES_CODE" width="200"  />
+<col fieldname="RES_EQU_NO" width="150"  />
+<col fieldname="RES_EQU_NO2" width="150"  />
+<col fieldname="MAC" width="150"  />
+<col fieldname="RES_STATE" width="70"  />
+<col fieldname="BIND_RES_EQU_CODE"  />
+<col fieldname="BIND_RES_EQU_NO"  />
+<col fieldname="CREATE_DATE" width="90"  />
+<col fieldname="RES_USE_MODE" width="80"  />
+<col fieldname="RES_CASE_ID" width="80"  />
+<col fieldname="S_SHARED_MAX" width="120"  />
+<col fieldname="S_USED_NUM" width="120"  />
+<col fieldname="K_SHARED_MAX" width="120"  />
+<col fieldname="K_USED_NUM" width="120"  />
+</TableInfo>
+
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=custId%3D1101779%26prodInstId%3D1020225&tmpPercentWidth=832&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblUserInsRes_his" setname="com.asiainfo.boss.so.instance.base.web.SETInsProdRes" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IUserInfoQuerySV" implservice_querymethod="getHisUserInsRes(long custId,long prodInstId)" 
+multiselect="false" isquerycount="TRUE" width="100%" height="150" pagesize="5" >
+<col fieldname='PROD_RES_INST_ID' visible='false' />
+<col fieldname='RES_EQU_NO3' visible='false' />
+<col fieldname='RES_INNET_MODE' visible='false' />
+<col fieldname="RES_TYPE" width="120"  />
+<col fieldname="RES_CODE" width="120"  />
+<col fieldname="RES_EQU_NO" width="150"  />
+<col fieldname="RES_EQU_NO2" width="150"  />
+<col fieldname="MAC" width="150"  />
+<col fieldname="RES_STATE" width="70"  />
+<col fieldname="BIND_RES_EQU_CODE"  />
+<col fieldname="BIND_RES_EQU_NO"  />
+<col fieldname="CREATE_DATE" width="90"  />
+<col fieldname="DONE_DATE" width="120"  />
+<col fieldname="RES_USE_MODE" width="80"  />
+</TableInfo>
+
+
+---------------------------------------------
+用户信息-账单等相关信息 ok
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=%26AcctId%3D0%26ServId%3D1020225%26regionId%3D23%26corpOrgId%3D278&tmpPercentWidth=833&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblBillList" setname="com.asiainfo.pgate.bo.account.payment.SETBillInfo" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.account.IBillOBDSRV" implservice_querymethod="query_billTtlSvr(String AcctId,String ServId,String regionId,String corpOrgId)" 
+multiselect="true" rowsequence="true" width="100%" height="50" footdisplay="none" >
+<col fieldname='BILLING_CYCLE_ID' visible='false' />
+<col fieldname='LATE_FEE' visible='false' />
+<col fieldname='LATE_FEE_DERATE' visible='false' />
+<col fieldname='LAST_CHANGE' visible='false' />
+<col fieldname='NOTSHOW' visible='false' />
+<col fieldname='USER_TYPE' visible='false' />
+<col fieldname='CORP_ORG_ID' visible='false' />
+<col fieldname='ACC_NBR' visible='false' />
+<col fieldname='ACCT_ID' visible='false' />
+<col fieldname='SERV_ID' visible='false' />
+<col fieldname='SERVICE_ID' visible='false' />
+<col fieldname='SERVICE_NAME' visible='false' />
+<col fieldname='SERVICE_TYPE' visible='false' />
+<col fieldname='SERVICE_TYPE_NAME' visible='false' />
+<col fieldname='USER_TYPE' visible='false' />
+<col fieldname='ACCT_BALANCE_ID' visible='false' />
+<col fieldname='BOOK_TYPE' visible='false' />
+<col fieldname='BALANCE_TYPE_NAME' visible='false' />
+<col fieldname='BALANCE_TYPE_ID' visible='false' />
+<col fieldname='RESERVE_BALANCE' visible='false' />
+<col fieldname='BALANCE' visible='false' />
+<col fieldname='EFF_DATE' visible='false' />
+<col fieldname='EXP_DATE' visible='false' />
+<col fieldname='CONTROL_TYPE' visible='false' />
+<col fieldname="ACCT_CODE"  />
+<col fieldname="BILLING_CYCLE"  />
+<col fieldname="ACCT_ITEM_TYPE_NAME"  />
+<col fieldname="ORIGINAL_AMOUNT" width="90"  />
+<col fieldname="DISCOUNT_AMOUNT" width="90"  />
+<col fieldname="ADJUST_AMOUNT" width="90"  />
+<col fieldname="AMOUNT" width="90"  />
+</TableInfo>
+
+
+http://boss.cqccn.com:8085/ainbs/business/com.ai.appframe2.web.DefaultAction?action=getSysDateTime
+
+用户信息-调账信息
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=acctId%3D0%26servId%3D1020225%26startDate%3D2016-02-11%26endDate%3D2016-05-11%26regionId%3D23%26corpOrgId%3D278&tmpPercentWidth=827&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblResult" setname="com.asiainfo.pgate.bo.account.query.SETAdjustQry" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.query.IAdjustQrySRV" implservice_querymethod="adjustQurey(UserInfoInterface $USERINFO,String acctId, String servId, String startDate, String endDate, long corpOrgId, short regionId)" 
+multiselect="false" width="100%" height="415" footdisplay="none" >
+<col fieldname='ADJUST_ACCT_ITEM_ID' visible='false' />
+<col fieldname='FEE_CYCLE_ID' visible='false' />
+<col fieldname='TO_AMOUNT' visible='false' />
+<col fieldname='TO_BALANCE' visible='false' />
+<col fieldname='CAUSE' visible='false' />
+<col fieldname='SUB_CAUSE' visible='false' />
+<col fieldname="KEY_NUM" width="180" title="主计费号"  />
+<col fieldname="BILLING_CYCLE_ID" width="80"  />
+<col fieldname="ADJUST_DATE" width="135"  />
+<col fieldname="CHARGE_ADJUST" width="80"  />
+<col fieldname="STAFF_CODE"  />
+<col fieldname="CAUSE_TYPE" width="150"  />
+</TableInfo>
+
+用户信息-交易信息
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=servId%3D1020225%26startDate%3D2016-03-01%2000:00:00%26endDate%3D2016-05-11%2023:59:59%26prodInstId%3D1020225%26acctId%3D0%26regionId%3D23%26corpOrgId%3D278&tmpPercentWidth=827&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblPayment" setname="com.asiainfo.pgate.bo.account.query.SETQPayment" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.query.IPayFeeQrySRV" implservice_querymethod="qryAllPayment(UserInfoInterface $USERINFO,long acctId, long prodInstId, String startDate, String endDate, String regionId, String corpOrgId)" 
+multiselect="true" width="100%" footdisplay="none" >
+<col fieldname='OPERATION_TYPE' visible='false' />
+<col fieldname='CERTIFICATE_TYPE' visible='false' />
+<col fieldname='INT_CODE' visible='false' />
+<col fieldname='STAFF_CODE' visible='false' />
+<col fieldname='IS_PRINTED' visible='false' />
+<col fieldname='IS_CRM1FEE' visible='false' />
+<col fieldname="PAYMENT_ID" width="120"  />
+<col fieldname="ACCT_ID"  />
+<col fieldname="ACCT_NAME"  />
+<col fieldname="AMOUNT" width="80"  />
+<col fieldname="PAY_DATE" width="130"  />
+<col fieldname="PAYMENT_METHOD_DESC" width="80"  />
+<col fieldname="STATE_DESC" width="80"  />
+<col fieldname="OPERATION_TYPE_DESC" width="80"  />
+<col fieldname="CERTIFICATE_TYPE_DESC" width="80"  />
+<col fieldname="CERTIFICATE_CODE"  />
+<col fieldname="INT_CODE_NAME" width="120"  />
+<col fieldname="BANK_NAME" width="250"  />
+<col fieldname="REMARK" width="80"  />
+<col fieldname="ORG_NAME" width="150"  />
+<col fieldname="STAFF_NAME"  />
+<col fieldname="INVOICE_CODE"  />
+<col fieldname="INVOICE_FLAG"  />
+<col fieldname="CARD_NO"  />
+</TableInfo>
+
+
+
+---------------------------------------------
+用户信息-网元指令 ok
+用户信息-用户网元指令发送情况
+http://jh.cqccn.com:8081/pboss/business/com.ai.unifyauth.ua.action.ne.ProductInstCmdCallQueryAction?action=getSendInfo&PRODUCT_INST_ID=1020225&TYPE=longProductInstId&url_source=XMLHTTP
+
+用户信息-用户网元指令发送列表
+http://jh.cqccn.com:8081/pboss/gridturnpage?action=refresh&pk=-1&condition=longProductInstId%3D1020225%26type%3DlongProductInstId&tmpPercentWidth=807&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="nccListTable" setname="com.ai.unifyauth.ua.set.ne.SETUaQNeCommandCall" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.ai.unifyauth.ua.service.ne.interfaces.IUaQNeCommandCallSV" implservice_querymethod="getQNeCommandCallByProductInstId(long longProductInstId,String type,int $STARTROWINDEX,int $ENDROWINDEX)" implservice_countmethod="getQNeCommandCallCountByProductInstId(long longProductInstId,String type)" 
+multiselect="false" width="99%" height="320" pagesize="15" >
+<col fieldname='NE_CMD_CALL_ID' visible='false' />
+<col fieldname="BUSI_CMD_CODE" width="80"  />
+<col fieldname="NE_COMMAND_ID" width="80"  />
+<col fieldname="CMD_OBJECT" width="70"  />
+<col fieldname="NE_ID"  />
+<col fieldname="AUTH_OBJECT_NO"  />
+<col fieldname="CREATE_DATE" width="120"  />
+<col fieldname="CMD_EXEC_DATE" width="120"  />
+<col fieldname="DEAL_STATE" width="70"  />
+<col fieldname="CMD_STATE" width="95"  />
+<col fieldname="CMD_STATUS_INFO"  />
+<col fieldname="CMD_LAST_SEND_DATE" width="120"  />
+<col fieldname="CMD_CONFIRM_DATE" width="120"  />
+<col fieldname="OP_NAME" width="120"  />
+</TableInfo>
+
+---------------------------------------------
+用户信息-物品信息 ok
+http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=prodInstId%3D1020225&tmpPercentWidth=849&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblUserInsResGoods" setname="com.asiainfo.boss.so.instance.base.web.SETInsProdResGoods" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.so.instance.base.service.interfaces.IUserInfoQuerySV" implservice_querymethod="getUserInstResGoodsByProdInstId(long prodInstId)" 
+multiselect="false" isquerycount="TRUE" width="100%" height="350" pagesize="5" >
+<col fieldname='PROD_INST_ID' visible='false' />
+<col fieldname='PROD_RES_GOODS_INST_ID' visible='false' />
+<col fieldname="RES_TYPE" width="120"  />
+<col fieldname="RES_CODE" width="150"  />
+<col fieldname="RES_EQU_NO" width="150"  />
+<col fieldname="AMOUNT" width="80"  />
+<col fieldname="RES_USE_MODE" width="80"  />
+<col fieldname="RES_STATE" width="80"  />
+</TableInfo>
+
+---------------------------------------------
+用户信息-分账信息 ok
+http://boss.cqccn.com:18081/boss_web/boss/so/soinfomgr/SplitBillInfo.jsp?prodInsId=1020225&custId=1101779&hDoneCode=null&orderProdId=null&longProductInstId=1020225&intRowsPerPage=15
+
+---------------------------------------------
+用户信息-客户基本信息 ok
+http://boss.cqccn.com:18081/boss_web/dbformrefresh?action=refresh&pk=-1&condition=custId%3D1101779&url_source=XMLHTTP
+<FormInfo formid="formCustomer" setname="com.asiainfo.boss.customer.cust.web.CMCustomer" datamodel="com.ai.appframe2.web.datamodel.MethodModelForService" editable="false" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.ICMCustomerSV" implservice_querymethod="queryCustomerInfo(String custId,String custStdAddrId)" conditionname="condition" cols="CUST_NAME;CUST_CODE;CUST_STATUS;OWN_ORG_ID;OWN_CORP_ORG_ID;CUST_LEVEL;CUST_CERT_TYPE;CUST_CERT_NO;CUST_CERT_ADDR;CUST_OCCUPATION;COMPANY_ADDR;COMPANY_NAME;CUST_TYPE;VALID_DATE;EXPIRE_DATE;CREATE_ORG_ID;CUST_NAME_SHORT;BORDER_FLAG;CUST_PROP;CUST_ID;HOST_CUST_CODE;REMARK"  >
+</FormInfo>
+
+
+---------------------------------------------
+用户信息-客户建档信息 ok
+ http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=custId%3D1101779&tmpPercentWidth=0&localcache=table&url_source=XMLHTTP
+ <TableInfo 
+tableid="tblCustBakInfo" setname="com.asiainfo.boss.customer.cust.web.CMCustomer" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.ICMCustomerSV" implservice_querymethod="queryCustomerByID(String custId)" 
+multiselect="false" isquerycount="TRUE" width="100%" >
+<col fieldname="CREATE_ORG_ID"  />
+<col fieldname="ORG_ID"  />
+<col fieldname="OWN_ORG_ID"  />
+<col fieldname="OWN_CORP_ORG_ID"  />
+<col fieldname="SALE_ORG_ID"  />
+</TableInfo>
+
+ 
+ 
+---------------------------------------------
+ 客户地址信息  ok
+ http://boss.cqccn.com:18081/boss_web/gridturnpage?action=refresh&pk=-1&condition=custId%3D1101779&tmpPercentWidth=733&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblInsAddress" setname="com.asiainfo.boss.customer.cust.web.SETInsAddress" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.boss.customer.cust.service.interfaces.ICMCustomerSV" implservice_querymethod="queryInsAddressByCustId(String custId,int $STARTROWINDEX,int $ENDROWINDEX)" implservice_countmethod="queryInsAddressByCustIdCount(String custId)" 
+isquerycount="TRUE" width="100%" height="40" pagesize="2" >
+<col fieldname='CUST_ADDR_ID' visible='false' />
+<col fieldname='STD_ADDR_ID' visible='false' />
+<col fieldname="STD_ADDR_NAME" width="200"  />
+<col fieldname="DOOR_NAME" width="90"  />
+<col fieldname="TRANSFER_STATUS" width="200"  />
+<col fieldname="RELOCATE_FLAG" width="200"  />
+</TableInfo>
+
+ 
+---------------------------------------------
+账户信息-账单信息 ok
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=%26AcctId%3D20825237%26ServId%3D0%26regionId%3D23%26corpOrgId%3D278&tmpPercentWidth=854&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblBillList" setname="com.asiainfo.pgate.bo.account.payment.SETBillInfo" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.account.IBillOBDSRV" implservice_querymethod="query_billTtlSvr(String AcctId,String ServId,String regionId,String corpOrgId)" 
+multiselect="true" rowsequence="true" width="100%" height="50" footdisplay="none" >
+<col fieldname='BILLING_CYCLE_ID' visible='false' />
+<col fieldname='LATE_FEE' visible='false' />
+<col fieldname='LATE_FEE_DERATE' visible='false' />
+<col fieldname='LAST_CHANGE' visible='false' />
+<col fieldname='NOTSHOW' visible='false' />
+<col fieldname='USER_TYPE' visible='false' />
+<col fieldname='CORP_ORG_ID' visible='false' />
+<col fieldname='ACC_NBR' visible='false' />
+<col fieldname='ACCT_ID' visible='false' />
+<col fieldname='SERV_ID' visible='false' />
+<col fieldname='SERVICE_ID' visible='false' />
+<col fieldname='SERVICE_NAME' visible='false' />
+<col fieldname='SERVICE_TYPE' visible='false' />
+<col fieldname='SERVICE_TYPE_NAME' visible='false' />
+<col fieldname='USER_TYPE' visible='false' />
+<col fieldname='ACCT_BALANCE_ID' visible='false' />
+<col fieldname='BOOK_TYPE' visible='false' />
+<col fieldname='BALANCE_TYPE_NAME' visible='false' />
+<col fieldname='BALANCE_TYPE_ID' visible='false' />
+<col fieldname='RESERVE_BALANCE' visible='false' />
+<col fieldname='BALANCE' visible='false' />
+<col fieldname='EFF_DATE' visible='false' />
+<col fieldname='EXP_DATE' visible='false' />
+<col fieldname='CONTROL_TYPE' visible='false' />
+<col fieldname="ACCT_CODE"  />
+<col fieldname="BILLING_CYCLE"  />
+<col fieldname="ACCT_ITEM_TYPE_NAME"  />
+<col fieldname="ORIGINAL_AMOUNT" width="90"  />
+<col fieldname="DISCOUNT_AMOUNT" width="90"  />
+<col fieldname="ADJUST_AMOUNT" width="90"  />
+<col fieldname="AMOUNT" width="90"  />
+</TableInfo>
+
+http://boss.cqccn.com:8085/ainbs/business/com.ai.appframe2.web.DefaultAction?action=getSysDateTime
+---------------------------------------------
+账户信息-调账信息 ok
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=acctId%3D20825237%26servId%3D0%26startDate%3D2016-02-11%26endDate%3D2016-05-11%26regionId%3D23%26corpOrgId%3D278&tmpPercentWidth=848&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblResult" setname="com.asiainfo.pgate.bo.account.query.SETAdjustQry" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.query.IAdjustQrySRV" implservice_querymethod="adjustQurey(UserInfoInterface $USERINFO,String acctId, String servId, String startDate, String endDate, long corpOrgId, short regionId)" 
+multiselect="false" width="100%" height="415" footdisplay="none" >
+<col fieldname='ADJUST_ACCT_ITEM_ID' visible='false' />
+<col fieldname='FEE_CYCLE_ID' visible='false' />
+<col fieldname='TO_AMOUNT' visible='false' />
+<col fieldname='TO_BALANCE' visible='false' />
+<col fieldname='CAUSE' visible='false' />
+<col fieldname='SUB_CAUSE' visible='false' />
+<col fieldname="KEY_NUM" width="180" title="主计费号"  />
+<col fieldname="BILLING_CYCLE_ID" width="80"  />
+<col fieldname="ADJUST_DATE" width="135"  />
+<col fieldname="CHARGE_ADJUST" width="80"  />
+<col fieldname="STAFF_CODE"  />
+<col fieldname="CAUSE_TYPE" width="150"  />
+</TableInfo>
+
+---------------------------------------------
+账户信息-交易记录 ok    可以查询用户的最后缴费时间
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=servId%3D0%26startDate%3D2016-03-01%2000:00:00%26endDate%3D2016-05-11%2023:59:59%26prodInstId%3D0%26acctId%3D20825237%26regionId%3D23%26corpOrgId%3D278&tmpPercentWidth=848&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblPayment" setname="com.asiainfo.pgate.bo.account.query.SETQPayment" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.query.IPayFeeQrySRV" implservice_querymethod="qryAllPayment(UserInfoInterface $USERINFO,long acctId, long prodInstId, String startDate, String endDate, String regionId, String corpOrgId)" 
+multiselect="true" width="100%" footdisplay="none" >
+<col fieldname='OPERATION_TYPE' visible='false' />
+<col fieldname='CERTIFICATE_TYPE' visible='false' />
+<col fieldname='INT_CODE' visible='false' />
+<col fieldname='STAFF_CODE' visible='false' />
+<col fieldname='IS_PRINTED' visible='false' />
+<col fieldname='IS_CRM1FEE' visible='false' />
+<col fieldname="PAYMENT_ID" width="120"  />
+<col fieldname="ACCT_ID"  />
+<col fieldname="ACCT_NAME"  />
+<col fieldname="AMOUNT" width="80"  />
+<col fieldname="PAY_DATE" width="130"  />
+<col fieldname="PAYMENT_METHOD_DESC" width="80"  />
+<col fieldname="STATE_DESC" width="80"  />
+<col fieldname="OPERATION_TYPE_DESC" width="80"  />
+<col fieldname="CERTIFICATE_TYPE_DESC" width="80"  />
+<col fieldname="CERTIFICATE_CODE"  />
+<col fieldname="INT_CODE_NAME" width="120"  />
+<col fieldname="BANK_NAME" width="250"  />
+<col fieldname="REMARK" width="80"  />
+<col fieldname="ORG_NAME" width="150"  />
+<col fieldname="STAFF_NAME"  />
+<col fieldname="INVOICE_CODE"  />
+<col fieldname="INVOICE_FLAG"  />
+<col fieldname="CARD_NO"  />
+</TableInfo>
+
+
+---------------------------------------------
+账户信息-后付费信息 ok
+ http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=regionId%3D23%26corpOrgId%3D278%26acctId%3D20825237%26acctCode%3D%26startDate%3D2015-12-11%26endDate%3D2016-05-11&tmpPercentWidth=800&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tbCollection" setname="com.asiainfo.pgate.bo.account.query.SETEntrustCreateDtl" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.entrust.IEntrustManagerSRV" implservice_querymethod="queryCollection(UserInfoInterface $USERINFO,String acctId, String servId, String opType, String startDate, String endDate, String regionId ,String corpOrgId)" 
+width="100%" height="120" footdisplay="none" >
+<col fieldname='STATE' visible='false' />
+<col fieldname='IS_ERR' visible='false' />
+<col fieldname='START_TIME' visible='false' />
+<col fieldname='ENTRUST_CREATE_ID' visible='false' />
+<col fieldname="AMOUNT_LABEL"  />
+<col fieldname="CREATE_TIME" width="150" title="托收生成时间"  />
+<col fieldname="BANK_NAME"  />
+<col fieldname="ACCT_NAME"  />
+<col fieldname="BANK_ACCT_ID"  />
+<col fieldname="GIFT_AMOUNT_STR" width="150"  />
+<col fieldname="STATE_CHAR"  />
+<col fieldname="BANK_DEAL_TIME" title="入账时间"  />
+<col fieldname="ERR_MSG"  />
+<col fieldname="ENTRUST_CREATE_DTL_ID" width="130"  />
+</TableInfo>
+
+http://boss.cqccn.com:8085/ainbs/business/com.ai.appframe2.web.DefaultAction?action=getSysDateTime
+
+---------------------------------------------
+账户信息-账本信息汇总页面   ok
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=qryType%3D22%26qryValue%3D20825237%26isUse%3Dfalse%26regionId%3D23%26corpOrgId%3D278&tmpPercentWidth=0&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblSelectPI" setname="com.asiainfo.pgate.bo.account.query.SETQProductInstance" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.query.IQueryInfoSRV" implservice_querymethod="qryProdInstByKeyNum(UserInfoInterface $USERINFO, String qryValue, String qryType, boolean isUse, String regionId, String corpOrgId)" 
+multiselect="true" width="100%" height="100" footdisplay="none" >
+<col fieldname='KEY_NUM_TYPE_CODE' visible='false' />
+<col fieldname='AREA_CODE' visible='false' />
+<col fieldname='AREA_ID' visible='false' />
+<col fieldname='EXCHANGE_ID' visible='false' />
+<col fieldname='ACCT_ID' visible='false' />
+<col fieldname='KEY_NUM' visible='false' />
+<col fieldname='ADDRESS_DESC' visible='false' />
+<col fieldname='REGION_ID' visible='false' />
+<col fieldname='CORP_ORG_ID' visible='false' />
+<col fieldname="PRODUCT_INSTANCE_ID"  />
+<col fieldname="KEY_NUM_TYPE_CODE_DESC" width="150"  />
+<col fieldname="IF_IS_MAIN"  />
+<col fieldname="ACC_NBR" width="150"  />
+<col fieldname="TOTALBLCAMOUNT"  />
+<col fieldname="TOTALBILLAMOUNT"  />
+<col fieldname="PRODUCT_INSTANCE_STATE"  />
+<col fieldname="STATE_DATE" width="200"  />
+</TableInfo>
+
+
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=AcctId%3D20825237%26ServId%3D0%26RegionId%3D23%26corpOrgId%3D278&tmpPercentWidth=850&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblBanlance" setname="com.asiainfo.pgate.bo.account.payment.SETBillInfo" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.account.IPaymentOBDSRV" implservice_querymethod="qryBookBalanceAndServTotalBlcAndBillNew(String AcctId, String ServId, String RegionId, String corpOrgId)" 
+rowsequence="false" width="100%" height="310" footdisplay="none" >
+<col fieldname='CORP_ORG_ID' visible='false' />
+<col fieldname='SERV_ID' visible='false' />
+<col fieldname='SERVICE_TYPE' visible='false' />
+<col fieldname='SERVICE_TYPE_NAME' visible='false' />
+<col fieldname='SERVICE_ID' visible='false' />
+<col fieldname='SERVICE_NAME' visible='false' />
+<col fieldname='USER_TYPE' visible='false' />
+<col fieldname='ACCT_BALANCE_ID' visible='false' />
+<col fieldname='BOOK_TYPE' visible='false' />
+<col fieldname='BALANCE_TYPE_ID' visible='false' />
+<col fieldname='ORIGINAL_BALANCE' visible='false' />
+<col fieldname='RESERVE_BALANCE' visible='false' />
+<col fieldname='AMOUNT' visible='false' />
+<col fieldname='UNWOFF_BALANCE' visible='false' />
+<col fieldname='ACC_NBR' visible='false' />
+<col fieldname='SUB_BILL_ID' visible='false' />
+<col fieldname='IF_ALLOW_DRAW_NAME' visible='false' />
+<col fieldname='IF_ALLOW_DRAW' visible='false' />
+<col fieldname='EFF_DATE' visible='false' />
+<col fieldname='EXP_DATE' visible='false' />
+<col fieldname='CONTROL_TYPE' visible='false' />
+<col fieldname='NOTSHOW' visible='false' />
+<col fieldname='SERVICEBLCAMOUNT' visible='false' />
+<col fieldname='SERVICEBILLAMOUNT' visible='false' />
+<col fieldname="ACCT_ID"  />
+<col fieldname="BALANCE_TYPE_NAME" width="180"  />
+<col fieldname="BALANCE" title="当前余额"  />
+</TableInfo>
+
+---------------------------------------------
+账户信息-账本信息 ok
+http://boss.cqccn.com:18081/boss_web/business/com.asiainfo.boss.so.web.SoFrameAction?action=clearSoSessionData&url_source=XMLHTTP
+
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=qryType%3D22%26qryValue%3D20825237%26isUse%3Dfalse%26regionId%3D23%26corpOrgId%3D278&tmpPercentWidth=850&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblSelectPI" setname="com.asiainfo.pgate.bo.account.query.SETQProductInstance" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.query.IQueryInfoSRV" implservice_querymethod="qryProdInstByKeyNum(UserInfoInterface $USERINFO, String qryValue, String qryType, boolean isUse, String regionId, String corpOrgId)" 
+multiselect="true" width="100%" height="100" footdisplay="none" >
+<col fieldname='KEY_NUM_TYPE_CODE' visible='false' />
+<col fieldname='AREA_CODE' visible='false' />
+<col fieldname='AREA_ID' visible='false' />
+<col fieldname='EXCHANGE_ID' visible='false' />
+<col fieldname='ACCT_ID' visible='false' />
+<col fieldname='KEY_NUM' visible='false' />
+<col fieldname='ADDRESS_DESC' visible='false' />
+<col fieldname='REGION_ID' visible='false' />
+<col fieldname='CORP_ORG_ID' visible='false' />
+<col fieldname="PRODUCT_INSTANCE_ID"  />
+<col fieldname="KEY_NUM_TYPE_CODE_DESC" width="150"  />
+<col fieldname="IF_IS_MAIN"  />
+<col fieldname="ACC_NBR" width="150"  />
+<col fieldname="TOTALBLCAMOUNT"  />
+<col fieldname="TOTALBILLAMOUNT"  />
+<col fieldname="PRODUCT_INSTANCE_STATE"  />
+<col fieldname="STATE_DATE" width="200"  />
+</TableInfo>
+
+http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=AcctId%3D20825237%26ServId%3D0%26RegionId%3D23%26corpOrgId%3D278&tmpPercentWidth=850&localcache=table&url_source=XMLHTTP
+<TableInfo 
+tableid="tblBanlance" setname="com.asiainfo.pgate.bo.account.payment.SETBillInfo" tablemodel="com.ai.appframe2.web.datamodel.MethodModelForService" implservice_name="com.asiainfo.pgate.service.account.IPaymentOBDSRV" implservice_querymethod="qryBookBalanceAndServTotalBlcAndBill(String AcctId, String ServId, String RegionId, String corpOrgId)" 
+multiselect="true" width="100%" height="310" footdisplay="none" >
+<col fieldname='CORP_ORG_ID' visible='false' />
+<col fieldname='ACCT_ID' visible='false' />
+<col fieldname='SERV_ID' visible='false' />
+<col fieldname='SERVICE_TYPE' visible='false' />
+<col fieldname='SERVICE_ID' visible='false' />
+<col fieldname='SERVICE_NAME' visible='false' />
+<col fieldname='USER_TYPE' visible='false' />
+<col fieldname='ACCT_BALANCE_ID' visible='false' />
+<col fieldname='BOOK_TYPE' visible='false' />
+<col fieldname='BALANCE_TYPE_ID' visible='false' />
+<col fieldname='RESERVE_BALANCE' visible='false' />
+<col fieldname='AMOUNT' visible='false' />
+<col fieldname='SUB_BILL_ID' visible='false' />
+<col fieldname='IF_ALLOW_DRAW' visible='false' />
+<col fieldname='CONTROL_TYPE' visible='false' />
+<col fieldname='NOTSHOW' visible='false' />
+<col fieldname='SERVICEBLCAMOUNT' visible='false' />
+<col fieldname='SERVICEBILLAMOUNT' visible='false' />
+<col fieldname="SERVICE_TYPE_NAME" width="80"  />
+<col fieldname="BALANCE_TYPE_NAME" width="180"  />
+<col fieldname="ORIGINAL_BALANCE" width="85"  />
+<col fieldname="BALANCE" title="当前余额"  />
+<col fieldname="UNWOFF_BALANCE" width="80"  />
+<col fieldname="ACC_NBR" width="150"  />
+<col fieldname="IF_ALLOW_DRAW_NAME" width="125"  />
+<col fieldname="EFF_DATE"  />
+<col fieldname="EXP_DATE"  />
+</TableInfo>
+
+
+
+---------------------------------------------
+ ok
+ ---------------------------------------------
+ ok
+---------------------------------------------
+ ok
+---------------------------------------------
+ ok
+
+
+#region not use
+            /**
+            //获取用户名下的CA号
+            arrPage[1].postUrl = "http://boss.cqccn.com:18081/boss_web/dbtreenewservlet?action=getchild&pk=1463044137497";
+            arrPage[1].postUrl = "http://boss.cqccn.com:18081/boss_web/dbtreenewservlet?action=getchild&pk=1463360765038";
+            arrPage[1].postUrl ="parentval=B85C37EF2AFC71E43A5FBA4505202482%2614844296%26_1112&parentnodeid=$Tree_custTree|||0-1&parentuserobj=557_null?custAddrId%3D14844296%26custId%3D4657035%26custName%3D邹黎%26custStdAddrID%3D&parentlevel=1&parentchecksts=false&parenttext=用户信息&parentislastnode=true|||true&getdeep=1&parentfoldopenpic=/image/tree/fo1.gif&parentfoldclosepic=/image/tree/fc1.gif&parentleafpic=/image/tree/l1.gif&";
+
+            arrPage[1].postUrl = "http://boss.cqccn.com:8085/ainbs/gridturnpage?action=refresh&pk=-1&condition=AcctId%3D13953423%26ServId%3D0%26RegionId%3D23%26corpOrgId%3D278&tmpPercentWidth=1031&localcache=table&url_source=XMLHTTP";
+            arrPage[1].postUrl = @"<TableInfo 
+tableid='tblSelectPI' setname='com.asiainfo.pgate.bo.account.query.SETQProductInstance' tablemodel='com.ai.appframe2.web.datamodel.MethodModelForService' implservice_name='com.asiainfo.pgate.service.query.IQueryInfoSRV' implservice_querymethod='qryProdInstByKeyNum(UserInfoInterface $USERINFO, String qryValue, String qryType, boolean isUse, String regionId, String corpOrgId)' 
+multiselect='true' width='100%' height='100' footdisplay='none' >
+<col fieldname='KEY_NUM_TYPE_CODE' visible='false' />
+<col fieldname='AREA_CODE' visible='false' />
+<col fieldname='AREA_ID' visible='false' />
+<col fieldname='EXCHANGE_ID' visible='false' />
+<col fieldname='ACCT_ID' visible='false' />
+<col fieldname='KEY_NUM' visible='false' />
+<col fieldname='ADDRESS_DESC' visible='false' />
+<col fieldname='REGION_ID' visible='false' />
+<col fieldname='CORP_ORG_ID' visible='false' />
+<col fieldname='PRODUCT_INSTANCE_ID'  />
+<col fieldname='KEY_NUM_TYPE_CODE_DESC' width='150'  />
+<col fieldname='IF_IS_MAIN'  />
+<col fieldname='ACC_NBR' width='150'  />
+<col fieldname='TOTALBLCAMOUNT'  />
+<col fieldname='TOTALBILLAMOUNT'  />
+<col fieldname='PRODUCT_INSTANCE_STATE'  />
+<col fieldname='STATE_DATE' width='200'  />
+</TableInfo>";
+             * 
+            **/
+
+
